@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\GlU32.Lib" />
+    <Library Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\OpenGL32.Lib" />
+    <Library Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\WS2_32.Lib" />
+    <Library Include="dependencies\freetype.lib" />
+    <Library Include="dependencies\glut32.lib" />
+    <Library Include="dependencies\libpng.lib" />
+    <Library Include="dependencies\SDL.lib" />
+    <Library Include="dependencies\SDLmain.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aiplayer.c" />
+    <ClCompile Include="src\ball.c" />
+    <ClCompile Include="src\billard.c" />
+    <ClCompile Include="src\billard3d.c" />
+    <ClCompile Include="src\billmove.c" />
+    <ClCompile Include="src\bumpref.c" />
+    <ClCompile Include="src\evaluate_move.c" />
+    <ClCompile Include="src\font.c" />
+    <ClCompile Include="src\getopt.c" />
+    <ClCompile Include="src\helpscreen.c" />
+    <ClCompile Include="src\menu.c" />
+    <ClCompile Include="src\net_socket.c" />
+    <ClCompile Include="src\options.c" />
+    <ClCompile Include="src\png_loader.c" />
+    <ClCompile Include="src\queue.c" />
+    <ClCompile Include="src\sound_stuff.c" />
+    <ClCompile Include="src\sys_stuff.c" />
+    <ClCompile Include="src\table.c" />
+    <ClCompile Include="src\textobj.c" />
+    <ClCompile Include="src\vmath.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aiplayer.h" />
+    <ClInclude Include="src\ball.h" />
+    <ClInclude Include="src\billard.h" />
+    <ClInclude Include="src\billmove.h" />
+    <ClInclude Include="src\bumpref.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\evaluate_move.h" />
+    <ClInclude Include="src\font.h" />
+    <ClInclude Include="src\gamemenu.h" />
+    <ClInclude Include="src\helpscreen.h" />
+    <ClInclude Include="src\menu.h" />
+    <ClInclude Include="src\myinclude.h" />
+    <ClInclude Include="src\net_socket.h" />
+    <ClInclude Include="src\options.h" />
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="src\png_loader.h" />
+    <ClInclude Include="src\queue.h" />
+    <ClInclude Include="src\sound_stuff.h" />
+    <ClInclude Include="src\sys_stuff.h" />
+    <ClInclude Include="src\table.h" />
+    <ClInclude Include="src\textobj.h" />
+    <ClInclude Include="src\vmath.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1A0B661-0BB3-432A-9AB2-E6F8D3B0D3E3}</ProjectGuid>
+    <RootNamespace>FooBillard</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
