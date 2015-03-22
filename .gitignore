@@ -1,0 +1,18 @@
+# * means any amount of characters
+# **/ means any path (possibly empty)
+*.obj
+*.vcxproj.user
+*.v12.suo
+*.suo
+*.sdf
+*.opensdf
+**/bin
+**/obj
+**/bin/*
+**/obj/*
+**/Debug/*
+**/Debug
+**/Release/*
+**/Release
+**/dep
+**/dep/*
