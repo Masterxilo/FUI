@@ -1,0 +1,40 @@
+TODO
+====
+ - training mode - ball traces when aiming
+ - training mode - still shoot when no ball on table anymore
+ - fix this: carambol 2nd player uses white ball !!!
+ - better replace-balls-valid-func
+ - keyfunc for bal traces
+ - UNDO (in training mode)
+ - implement international rules (maybe http://www.bca-pool.com/play/tournaments/rules/rls_gen.shtml)
+ - find tournament menu segfault
+ - AI-AI fast motion in tournament menu
+ - initial place cue ball for training mode
+ - more lighting ?
+ - white ball replaeced when sunk in training mode
+ 
+ - save/load game.
+ - correct initial spin (roll when hit 1/3 from top)
+ - correct exit when .foobillrdrc write-protected
+ - adjustable direct mouse hit - ratio
+ - correct normals for 3D-font
+ - jumpshots
+ - tournament mode: 5 matches with different opponents
+ - test quads option for 
+ - find & fix player name bug
+ - replace cubereflection textures of chrome edges
+ - performance improvements by triangle strips
+ - cutoff for ang. mom. transfer also for bande?
+
+ - take care of maximum texture sizes explicitly (GLU does this already)
+ - sound also for non-SDL
+ - fps also for SDL
+ - netgame - other player always non-cue-view
+ - AI-player not recognize: 8ball 1st played foul
+ - bug!! cue switches to center pos at end of cue-animation
+ - better lens flare (angle dependent)
+ - strength adj. per mouseclick on bar
+ - better detail-1-ball
+ - better ai-player
+ - win32-port?
+ 

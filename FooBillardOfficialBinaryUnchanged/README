@@ -1,0 +1,156 @@
+
+                             FooBillard
+                       --==##############==--
+
+                   Copyright (C) 2001 Florian Berger
+                   
+                      email: harpin_floh@yahoo.de
+                             florian.berger@aec.at
+                             
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License Version 2 as
+    published by the Free Software Foundation;
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+
+What is FooBillard ?
+--------------------
+
+   FooBillard is a free OpenGL-billard game for Linux. Why foo?
+   Well, actually I had this logo (F.B.-Florian Berger) and then foo sounds a
+   bit like pool (Somehow I wasn't quite attracted by the name FoolBillard)
+   Actually FooBillard is still under development but the main physics is
+   implemented. If you are a billard-pro and you're missing some physics,
+   please tell me. Cause I've implemented it like I think it should work,
+   which might differ from reality.
+
+   You need to have GLUT or SDL installed on your system.
+   Furthermore libpng has to be installed for loading the textures.
+   And freetype is used for font rendering.
+   the fonts included here are lent from http://www.larabiefonts.com
+   (see README.FONTS)
+   
+   The following features are implemented:
+    - wood paneled table with gold covers and gold diamonds
+    - reflections on balls
+    - shadow pixmaps
+    - detail switching of balls according to distance
+    - zoom in/out - hold right mousebutton
+    - FOV +/- - hold right mousebutton + CTRL
+    - rotate - hold left mousebutton
+    - animated queue
+    - simple billard rules for 8 and 9-ball
+    - simple AI-Player
+    - strength adjustment
+    - eccentic hit adjustment (button2+Shift)
+    - lensflare
+    - commandline options
+    - config file (~/.foobillardrc)
+    - red green stereo !!!!
+    - sound (using SDL)
+    - network play
+   
+   Press <F1> in game for a quick help !
+   
+   here all keyboard/mouse functions:
+    - mouse moving and button1 -> rotate
+    - mouse moving and button2 -> zoom
+    - mouse moving and button1 after button2 -> place cue ball
+    - mouse moving and button2 after button1 -> adjust effet
+    - mouse moving and button2 and Ctrl -> FOV - adjust
+    - mouse moving and button2 and Shift -> cue offset adjust
+    - mouse moving and button1 and Shift -> place cue ball (when active)
+    - mouse button3 -> shoot
+    - keyboard <space> or <enter> -> shoot
+    - keyboard <up>,<down> or <page up>,<page down> strength
+    - keyboard <left>,<right> rotate
+    - keyboard <ESC> end game
+    - keyboard <0> suggest AI-shot
+    - keyboard <a> toggle actual player AI/Human
+    - keyboard <n> restart game
+    - keyboard <b> little benchmark (show fps)
+    - keyboard <v> turn vertical help-line on/off
+    - keyboard <c>,<F3> toggle cue-view on/off
+    - keyboard <f>,<F4> toggle free move mode
+    - keyboard <r> toggle simpler reflections (faster - using multitexture)
+    - keyboard <s> toggle red/green stereo
+    - keyboard <F1> toggle help screen
+    - keyboard <F2> birdview (same as <F3>+<F4>+centered pos)
+
+
+   red-green stereo:
+   -----------------
+    one picture is drawn on red channel only, the other one
+    on the other both channels (green, blue)
+    so you can use either a green or blue or cyan filter for one eye (left),
+    and a red one for the other eye (right).
+   
+   
+   network game:
+   -------------
+   
+    * general info:
+      commandline network game start is not anymore available
+      network game should be started from within the menu.
+
+      The host and the client can of course be the same machine.
+      The data sent between the computers are only the shot-data,
+      like strength, cue offset and direction.
+      So if the two machines have different internal floating point
+      accuracy, the games might drift apart after a certain amount of time.
+      I'm not sure how strong this effect is in practice, cause i only tested
+      on similar machines.
+
+    * start from menu:
+      hit <ESC> to get to the menu,
+      select <Network Game>/<As Host> on one computer and
+      <Network Game>/<Join>/<OK> on the other machine after having set the
+      proper IP in <Network Game>/<Join>/<IP>.
+      the <Network Game>/<Port> setting must be the same on both machines.
+      the IP of the host machine can also be set on the client machine 
+      (the joining one), by adding hostaddr=IP-ADDR in the config file 
+      (see below), or by passing it as commandline option:
+      --hostaddr=IP-ADDR
+      starting from menu the host sends its gamestate variables to the
+      client, so every clienside settings get overriden by the host
+      (gametype, tablesize, player names, ...)
+
+    
+   SDL:
+   ----
+    SDL looks fine, and its easy to add features (here sound).
+    But i dont want to switch to SDL fully, because its very "unfriendly"
+    to other resources.
+    using GLUT i can watch TV (non-overlayed) and run some other apps 
+    without any major performance drawbacks.
+    (maybe there's a way of programming SDL in a way, that it gets fine 
+    performance sharing too - if you konw how, let me know)
+    
+    
+   config file (.foobillardrc):
+   ----------------------------
+    You can place a config file named ".foobillardrc" in your home directroy.
+    This file can contain all possible commandline arguments (without the 
+    preceeding "-" and one line for each argument).
+    Commandline parameters are parsed afterwards, so they override the
+    ".foobillardrc" settings.
+   
+    
+   KNOWN BUGS:
+   
+   
+   TIPS:
+   * the strength adjustment is up/down or pageup/pagedown, so many people
+     who have installed imwheel can use the mouse wheel to adjust strength :-)
+   * by default there is one human player vs. one AI-player
+     you can chane this by commanline options ( foobillard --help )
+   
