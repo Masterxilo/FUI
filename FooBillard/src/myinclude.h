@@ -4,7 +4,7 @@
 #define WIN32
 #define _CRT_SECURE_NO_WARNINGS
 #define _MBCS
-
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <winsock2.h> // including before windows.h prevents it from including winsock1
 #define NOMINMAX
 #include <Windows.h>
