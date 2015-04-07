@@ -9,4 +9,3 @@ D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBil
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.pdb
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.pdb
-D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.csprojResolveAssemblyReference.cache
