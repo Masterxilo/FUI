@@ -1,0 +1,1 @@
+the color <0xrrggbb> means one byte for each red, green, blue
