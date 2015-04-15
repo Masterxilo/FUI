@@ -448,6 +448,7 @@ sys_create_display(int *argc, char **argv, int width,int height)
 #ifdef _WIN32
   SDL_WM_SetCaption("FooBillard", "FooBillard");
 #endif
+
 }
 
 int sys_get_fullscreen(void)

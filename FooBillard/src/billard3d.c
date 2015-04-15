@@ -6,7 +6,7 @@
 **
 **    This program is free software; you can redistribute it and/or modify
 **    it under the terms of the GNU General Public License Version 2 as
-**    published by the Free Software Foundation;
+**    published by the Free Software Ffoundation;
 **
 **    This program is distributed in the hope that it will be useful,
 **    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -5266,6 +5266,10 @@ int main(int argc, char *argv[])
   if (fullscreen) sys_fullscreen(1, win_width, win_height);
 #endif
   sys_create_display(&argc, argv, WIDTH, HEIGHT);
+
+  // ===
+  mm_init();
+  // ===
 
 #ifndef _WIN32
   if( fullscreen ) sys_fullscreen( 1, win_width, win_height );

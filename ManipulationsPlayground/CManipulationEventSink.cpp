@@ -135,7 +135,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
   /* [in] */ FLOAT cumulativeExpansion,
   /* [in] */ FLOAT cumulativeRotation)
 {
-  ClearScreen();
+    /*
   printf("ManipulationDelta\n");
   printf("\
     %f x\n\
@@ -164,7 +164,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
     cumulativeExpansion,
     cumulativeRotation
     
-    );
+    );*/
 
   m_cDeltaEventCount++;
 

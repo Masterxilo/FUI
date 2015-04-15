@@ -21,6 +21,9 @@
     <Library Include="dependencies\SDLmain.lib" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CManipulationEventSink.cpp" />
+    <ClCompile Include="mm.cpp" />
+    <ClCompile Include="processTouch.cpp" />
     <ClCompile Include="src\aiplayer.c" />
     <ClCompile Include="src\ball.c" />
     <ClCompile Include="src\billard.c" />
@@ -43,6 +46,8 @@
     <ClCompile Include="src\vmath.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CManipulationEventSink.h" />
+    <ClInclude Include="mm.h" />
     <ClInclude Include="src\aiplayer.h" />
     <ClInclude Include="src\ball.h" />
     <ClInclude Include="src\billard.h" />
@@ -96,6 +101,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -106,6 +112,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

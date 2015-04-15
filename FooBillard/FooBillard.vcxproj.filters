@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\game">
+      <UniqueIdentifier>{e77579e3-cb49-4d53-96e1-212b2006433d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\headers">
+      <UniqueIdentifier>{fb35cba1-112f-46ae-a910-fd20a3b95b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\game\sources">
+      <UniqueIdentifier>{fec203c6-cd4b-43cd-91fe-73c9a33d7281}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Library Include="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\OpenGL32.Lib" />
@@ -25,133 +34,148 @@
     <Library Include="dependencies\SDLmain.lib" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\font.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\helpscreen.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\menu.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\net_socket.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\options.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\png_loader.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\queue.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sound_stuff.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sys_stuff.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\table.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\textobj.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="src\vmath.c">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="src\aiplayer.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\ball.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\billard.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\billard3d.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\billmove.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\bumpref.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\evaluate_move.c">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\font.c">
+      <Filter>Quelldateien\game\sources</Filter>
     </ClCompile>
     <ClCompile Include="src\getopt.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpscreen.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\png_loader.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net_socket.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\queue.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sound_stuff.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys_stuff.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\textobj.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vmath.c">
+      <Filter>Quelldateien\game\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="mm.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="processTouch.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CManipulationEventSink.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\aiplayer.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\ball.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\billard.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\billmove.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\bumpref.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\config.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\evaluate_move.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\font.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\gamemenu.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\helpscreen.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\menu.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\myinclude.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\net_socket.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\options.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\player.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\png_loader.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\queue.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\sound_stuff.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\sys_stuff.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\table.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\textobj.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
     </ClInclude>
     <ClInclude Include="src\vmath.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\game\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CManipulationEventSink.h">
+      <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

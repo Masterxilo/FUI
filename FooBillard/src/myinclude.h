@@ -1,3 +1,5 @@
+#include "mm.h"
+
 #define USE_SDL
 #define USE_SOUND
 #define __WIN32__

@@ -1,1 +1,13 @@
 the color <0xrrggbb> means one byte for each red, green, blue
+player_copy1
+player_copy2
+player_copy3
+human player 1
+player_copy3.5
+player_copy4
+player_copy1
+player_copy2
+player_copy3
+human player 2
+player_copy3.5
+player_copy4
