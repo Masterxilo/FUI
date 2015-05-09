@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{a830ca36-2336-4ff2-b080-dfb7860aa83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\disabled">
+      <UniqueIdentifier>{7cc3016e-1045-49f4-9b05-561dbc9a401f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\disabled">
+      <UniqueIdentifier>{3085d3bc-d971-4679-80c9-632b8b372e3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\table.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\textobj.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\vmath.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\ball.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\billard.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\billard3d.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\billmove.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\evaluate_move.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\font.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\options.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\png_loader.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\sound_stuff.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\sys_stuff.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\getopt.c">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\aiplayer.c">
+      <Filter>Quelldateien\disabled</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\net_socket.c">
+      <Filter>Quelldateien\disabled</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\bumpref.c">
+      <Filter>Quelldateien\disabled</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\mm.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\processTouch.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\CManipulationEventSink.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\vmath.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\ball.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\billard.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\billmove.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\evaluate_move.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\font.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\options.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\player.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\png_loader.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\sound_stuff.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\sys_stuff.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\table.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\textobj.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\myinclude.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\getopt.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\net_socket.h">
+      <Filter>Headerdateien\disabled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\aiplayer.h">
+      <Filter>Headerdateien\disabled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\bumpref.h">
+      <Filter>Headerdateien\disabled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\src\gamemenu.h">
+      <Filter>Headerdateien\disabled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\mm.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Paul%27Masterxilo%27\Desktop\foobillard-3.0-src-2_\CManipulationEventSink.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\freetype.lib" />
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\getopt.lib" />
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\glut32.lib" />
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\libpng.lib" />
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\SDL.lib" />
+    <Library Include="..\..\..\Paul%27Masterxilo%27\Desktop\Future User Interfaces\FUI\FooBillard\dependencies\SDLmain.lib" />
+  </ItemGroup>
+</Project>

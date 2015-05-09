@@ -1,0 +1,25 @@
+helpscreen.o helpscreen.o: helpscreen.c font.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h \
+  textobj.h options.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h config.h
+
+font.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h:
+
+textobj.h:
+
+options.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h:
+
+config.h:

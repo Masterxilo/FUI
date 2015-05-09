@@ -1,0 +1,28 @@
+vmath.o vmath.o: vmath.c \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/math.h \
+  vmath.h
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/math.h:
+
+vmath.h:

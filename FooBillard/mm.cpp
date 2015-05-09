@@ -55,6 +55,8 @@ extern "C" {
 #define queue_strength (player[act_player].strength)
     extern
         double strength01(double value);
+
+#define CUEBALLPOS balls.ball[CUE_BALL_IND].r
 }
 
 void shoot_now(double strengthIn01) {
@@ -72,6 +74,36 @@ GLfloat old_cam_dist_aim, old_Xrot, old_Zrot; // unused
 int swipeThreasholdDistanceInPixels = 380,
     swipeThresholdTimeInMs = 300;
 
+// == Projection
+
+#include <gl/GLU.h>
+
+
+void toScreen(Vect pos, double* x, double* y) {
+    // not changing, same problem:
+    // http://www.gamedev.net/topic/114786-bogus-matrix-returned-with-glgetdoublev/
+
+    //7/ modelview   
+    printf("GL_MODELVIEW_MATRIX ");
+    for (GLdouble d : modelview) printf("%f ", d);
+    printf("\n");
+
+    double z;
+    gluProject(pos.x, pos.y, pos.z, modelview, projection, viewport,
+        x, y, &z);
+    pos.y = win_height - pos.y;
+}
+// http://nehe.gamedev.net/article/using_gluunproject/16013/
+// http://www.google.ch/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fmyweb.lmu.edu%2Fdondi%2Fshare%2Fcg%2Funproject-explained.pdf&ei=SvFMVdmsFYm4UauXgPAI&usg=AFQjCNG4seNb1U-yrCDYzPJJ3t2ocMN3FQ&sig2=rR64KsTFGbWzxbPLRPFJYQ&bvm=bv.92765956,d.d24
+void unproject(float winX, float winY, float winZ,
+    double* posX, double* posY, double* posZ
+    ) {
+    winY = (float)viewport[3] - winY;           // Subtract The Current Mouse Y Coordinate From The Screen Height.
+
+    gluUnProject(winX, winY, winZ, modelview, projection, viewport,
+        posX, posY, posZ);
+}
+
 // == State machine for touch gesture position and kind
 // Classification
 enum State { NoState, 
@@ -85,14 +117,24 @@ enum State { NoState,
 State state = NoState;
 
 // Determine whether we are in
+float len(int x, int y);
+bool onBallWithDist(POINT& p) {
+
+    double x, y;
+    toScreen(CUEBALLPOS, &x, &y);
+    //dprintf("current cueball screenpos %f %f\n", x, y);
+
+    int r = 50;
+    return len(x - p.x, y - p.y) < r;
+}
 // Ball region
 bool inAb(POINT* p) {
-    return p->x < 100 && p->y < 100;
+    return placing_cue_ball && onBallWithDist(*p);
 }
 
 // Swipe region
 bool inAs(POINT* p) {
-    return p->x < 100 && p->y >100 && p->y < 200;
+    return !placing_cue_ball && onBallWithDist(*p);
 }
 
 
@@ -101,18 +143,6 @@ bool inConfirmRegion(POINT* p) {
     return
            p->x >100 && p->x < 200
         && p->y < 100;
-}
-
-#include <gl/GLU.h>
-// http://nehe.gamedev.net/article/using_gluunproject/16013/
-// http://www.google.ch/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fmyweb.lmu.edu%2Fdondi%2Fshare%2Fcg%2Funproject-explained.pdf&ei=SvFMVdmsFYm4UauXgPAI&usg=AFQjCNG4seNb1U-yrCDYzPJJ3t2ocMN3FQ&sig2=rR64KsTFGbWzxbPLRPFJYQ&bvm=bv.92765956,d.d24
-void unproject(float winX, float winY, float winZ,
-    double* posX, double* posY, double* posZ
-    ) {
-    winY = (float)viewport[3] - winY;           // Subtract The Current Mouse Y Coordinate From The Screen Height.
-
-    gluUnProject(winX, winY, winZ, modelview, projection, viewport,
-        posX, posY, posZ);
 }
 
 double intersectPlane(double oz, double dz, double planez) {
@@ -137,31 +167,17 @@ Vect getNewBallPosition(int screenx, int screeny) {
         oz + dz * t};
     return v;
 }
-
-void toScreen(Vect pos, double* x, double* y) {
-    // not changing, same problem:
-    // http://www.gamedev.net/topic/114786-bogus-matrix-returned-with-glgetdoublev/
-
-    //7/ modelview   
-    printf("GL_MODELVIEW_MATRIX ");
-    for (GLdouble d : modelview) printf("%f ", d);
-    printf("\n");
-
-    double z;
-    gluProject(pos.x, pos.y, pos.z, modelview, projection, viewport,
-        x, y, &z);
+#include <algorithm>
+template<typename T>
+void clamp(T& v, T a, T b) {
+    if (a > b) swap(a, b);
+    v = min(max(v, a), b);
 }
-
 
 POINT p1_; // old p1
 // Called when the touchpoints moved but still have the same ids (fingers)
 // as they did when the config was last changed
-#define CUEBALLPOS balls.ball[CUE_BALL_IND].r
 void move(POINT* p1, POINT* p2) {
-    double x, y;
-    toScreen(CUEBALLPOS, &x, &y);
-    dprintf("current cueball screenpos %f %f\n", x, y);
-
     POINT p1d;
     if (p1) {
         p1d.x = p1->x - p1_.x; p1d.y = p1->y - p1_.y;
@@ -187,9 +203,12 @@ void move(POINT* p1, POINT* p2) {
     else if (state == Cm) {
         dprintf("moving camera to %d %d\n", p1->x, p1->y);
 
-        Xrot += p1d.x; // old_Xrot + cumulativeRotation; // up down
-        Zrot += p1d.y; // old_Zrot - cumulativeRotation*30;
+        Xrot += p1d.y; // old_Xrot + cumulativeRotation; // up down
+       clamp( Xrot, -90.f,0.f);
+        
+        Zrot += p1d.x; // old_Zrot - cumulativeRotation*30;
 
+        dprintf("angle %f %f\n", Xrot, Zrot);
     }
     else
         dprintf("move called while in state %d?\n", state);
@@ -221,8 +240,10 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 
     if (inConfirmRegion(p1)) {
         // disable ball move
-        if (placing_cue_ball)
+        if (placing_cue_ball) {
             toggle_queue_view();
+            placing_cue_ball = 0;
+        }
     }
 
     if (inAb(p1)) {
@@ -315,7 +336,6 @@ void mm_gesture(  /* [in] */ FLOAT x,
     /* [in] */ FLOAT cumulativeExpansion,
     /* [in] */ FLOAT cumulativeRotation) {
 
-    return;
     if (state == Cz) {
         dprintf("zooming\n");
         cam_dist_aim = old_cam_dist_aim * (1.0 / cumulativeScale);

@@ -1,0 +1,41 @@
+menu.o menu.o: menu.c menu.h textobj.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/ctype.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h \
+  options.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h \
+  sys_stuff.h
+
+menu.h:
+
+textobj.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/ctype.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h:
+
+options.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h:
+
+sys_stuff.h:

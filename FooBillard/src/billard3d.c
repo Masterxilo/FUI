@@ -2027,7 +2027,7 @@ double strength01(double value)
 }
 
 // ==
-int MouseEventEnabled = 1;
+int MouseEventEnabled = 0;
 // == 
 void
 MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int key_modifiers)
@@ -3696,12 +3696,12 @@ void DisplayFunc(void)
         // debug
 
         glGetDoublev(GL_PROJECTION_MATRIX, projection);
-        printf("GL_PROJECTION_MATRIX ");
-        for (int i = 0; i < 16; i++){
+       /* printf("GL_PROJECTION_MATRIX ");
+        for (int i = 0; i <Ke 16; i++){
             GLdouble d = projection[i]; printf("%f ", d);
         }
         printf("\n");
-
+        */
         // Could do matrix manipulations here
         glBegin(GL_LINE_STRIP);
         glVertex2f(0, 0);
