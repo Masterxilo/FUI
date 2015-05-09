@@ -171,7 +171,7 @@ static int fullscreen = 0;  /* this is not updated during runtime - its only for
 static GLuint table_obj = 0;
 static GLboolean Animate = GL_TRUE;
 
-static GLfloat Xrot = -70.0, Yrot = 0.0, Zrot = 0.0;
+GLfloat Xrot = -70.0, Yrot = 0.0, Zrot = 0.0;
 static GLfloat Xque = -83.0, Zque = 0.0;
 static GLfloat Xrot_offs = 0.0, Yrot_offs = 0.0, Zrot_offs = 0.0;
 static GLfloat scale = 1.0;
@@ -199,7 +199,7 @@ VMvect  free_view_pos;
 
 static int  vline_on = 1;
 //static int  key_modifiers;
-static int  queue_view = 1;
+int  queue_view = 1;
 static int  old_queue_view = 1;
 
 static double queue_anim = 0.0;
@@ -244,7 +244,7 @@ static int * cuberef_allballs_texbind = 0;
 VMvect comp_dir;
 
 static int  human_human_mode = 0;
-static int  act_player = 0;   /* 0 or 1 */
+int  act_player = 0;   /* 0 or 1 */
 static char * player_names[] = {"Human Player", "AI Player", "Human Player 2", "AI Player 2"};
 static char * half_full_names[] = {"any", "full", "half"};
 static int  b1_b2_hold = 0;
@@ -262,7 +262,7 @@ double strength;
 char *name;
 } player[2];
 */
-static struct Player player[2];
+struct Player player[2];
 
 VMvect lightpos[10];
 int    lightnr = 3;
@@ -1882,6 +1882,9 @@ static void Idle_timer(void)
           if (CUE_BALL_IND == balls.nr) CUE_BALL_IND = 0;
           if (CUE_BALL_IND == old_cueball_ind) break;
         }
+
+
+
       }
       if (old_queue_view == 1 && queue_view == 0) /* this is sloppy and ugly */
       { /* set free_view_pos to actual view */
@@ -2023,11 +2026,17 @@ double strength01(double value)
   return value;
 }
 
-
+// ==
+int MouseEventEnabled = 1;
+// == 
 void
 MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int key_modifiers)
 //MouseEvent(int button, int state, int x, int y)
 {
+    // ==
+    if (!MouseEventEnabled) return;
+    // ==
+
   //    key_modifiers=glutGetModifiers();
 
   if (g_act_menu != 0) {
@@ -2110,6 +2119,8 @@ MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int ke
 void
 ball_displace_clip(VMvect * cue_pos, VMvect offs)
 {
+    printf("ball_displace_clip %f %f %f\n", offs.x, offs.y, offs.z);
+
   VMvect newpos;
 
   newpos = vec_add(*cue_pos, offs);
@@ -2148,7 +2159,7 @@ ball_displace_clip(VMvect * cue_pos, VMvect offs)
   *cue_pos = newpos;
 }
 
-
+extern int doingTouchGesture;
 void
 MouseMotion(int x, int y, int key_modifiers)
 {
@@ -2171,7 +2182,7 @@ MouseMotion(int x, int y, int key_modifiers)
     //        fprintf(stderr,"x,y=%d,%d\n",x,y);
     menu_select_by_coord(g_act_menu, x - win_width / 2, -y + win_height / 2);
   }
-  else {
+  else if (!doingTouchGesture) {
 
     acc = 1.0;
 
@@ -2287,7 +2298,9 @@ MouseMotion(int x, int y, int key_modifiers)
         }
       }
       else if (place_cue_ball && !balls_moving  && !player[act_player].is_AI && !player[act_player].is_net){
-        VMvect xv, yv, whitepos;
+        // update position of cueball
+          printf("place cueball\n");
+          VMvect xv, yv, whitepos;
         double dx, dy;
         int i, move_ok;
         //            dx=(double)(x-start_x)*acc*0.005;
@@ -2918,9 +2931,22 @@ void Display_tournament_tree(struct TournamentState_ * ts)
   glDisable(GL_BLEND);
 }
 
+// ==
+/*extern GLdouble* modelview;
+extern GLdouble* projection;
+extern GLint   * viewport;
+*/
+
+extern GLdouble modelview[16];
+extern GLdouble projection[16];
+extern GLint viewport[4];
+// ==
 
 void DisplayFunc(void)
 {
+    // == custom
+    textObj* text;
+    // ===
   //   int i;
   double th, ph;
   GLfloat light_position[] = {0.0, 0.0, 0.7, 1.0};
@@ -3150,6 +3176,12 @@ void DisplayFunc(void)
       glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
+    // ==
+    // Store matrices
+    glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
+    glGetDoublev(GL_PROJECTION_MATRIX, projection);
+    glGetIntegerv(GL_VIEWPORT, viewport);
+    // ==
 
     /* draw table */
     glCallList(table_obj);
@@ -3628,14 +3660,65 @@ void DisplayFunc(void)
       }
 
 
-      if (helpscreen_on){
+      if (1){//helpscreen_on){
         glColor3f(0.7, 0.7, 0.7);
         glEnable(GL_TEXTURE_2D);
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE);
+
         glPushMatrix();
-        draw_help_screen(win_width, win_height);
+        if (helpscreen_on) draw_help_screen(win_width, win_height);
+
         glPopMatrix();
+        // === custom text
+        text = textObj_new("Hello, World!", options_ball_fontname, 23);
+        glPushMatrix();
+
+        // Screen goes from -1 to 1 in both directions, (0,0) is the center of the screen
+        glTranslatef(-0.95, 0.87, 0);
+        glScalef(2.0 / win_width*win_height / 768.0, 2.0 / 768.0, 1.0);
+        textObj_draw(text);
+
+        glPopMatrix();
+        textObj_delete(text);
+
+        // Custom drawing
+        // modify projection
+        glMatrixMode(GL_PROJECTION);
+       // glPushMatrix(); glLoadIdentity();
+        //gluOrtho2D(0, 0, win_width, win_height);
+        glOrtho(0, 0, win_width, win_height, -1, 1);
+
+
+        glMatrixMode(GL_MODELVIEW);
+        glPushMatrix();
+        glLoadIdentity();
+        // debug
+
+        glGetDoublev(GL_PROJECTION_MATRIX, projection);
+        printf("GL_PROJECTION_MATRIX ");
+        for (int i = 0; i < 16; i++){
+            GLdouble d = projection[i]; printf("%f ", d);
+        }
+        printf("\n");
+
+        // Could do matrix manipulations here
+        glBegin(GL_LINE_STRIP);
+        glVertex2f(0, 0);
+        glVertex2f(0.1,0.1);
+
+        glVertex2f(100,100);
+        glEnd();
+
+        glPopMatrix();
+
+        // Reset projection
+        glMatrixMode(GL_PROJECTION);
+        glPopMatrix();
+        glMatrixMode(GL_MODELVIEW);
+
+        // ===
+
         glDisable(GL_LIGHTING);
         glDisable(GL_TEXTURE_2D);
         glDisable(GL_BLEND);

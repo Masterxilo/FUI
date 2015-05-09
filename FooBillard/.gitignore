@@ -11,3 +11,7 @@
 **/Release
 **/dep
 **/dep/*
+**/obj
+**/obj/*
+**/bin
+**/bin/*

@@ -68,16 +68,21 @@ static char *help_source[] = {
 
 void create_help_screen(int win_width, int win_height)
 {
+  // Pointer to line of helptext
   char **help_text = &help_source[0];
+
+  // Pointers to text objects
   text = malloc(100 * sizeof(textObj *));
   text0 = text;
+
   help_screen_obj = glGenLists(1);
 
+  // for each line
   *text = textObj_new(*help_text, options_help_fontname, HEAD_FONT_SIZE);
   text++;
   help_text++;
   while (*help_text) {
-    *text = textObj_new(*help_text, options_help_fontname, HELP_FONT_SIZE);
+      *text = textObj_new(*help_text, options_help_fontname, HELP_FONT_SIZE); 
     text++;
     help_text++;
   }
@@ -85,6 +90,7 @@ void create_help_screen(int win_width, int win_height)
 
   text = text0;
   glNewList(help_screen_obj, GL_COMPILE);
+
   glTranslatef(-0.95, 0.87, -1.0);
   glScalef(2.0 / win_width*win_height / 768.0, 2.0 / 768.0, 1.0);
   //glScalef(2.0/win_width,2.0/win_height,1.0);
@@ -92,6 +98,7 @@ void create_help_screen(int win_width, int win_height)
     textObj_draw(*text);
     glTranslatef(0.0, -HELP_LINE_SPACING, -0.0);
   }
+
   glEndList();
 }
 

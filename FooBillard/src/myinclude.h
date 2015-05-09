@@ -1,3 +1,4 @@
+#pragma once
 #include "mm.h"
 
 #define USE_SDL
@@ -12,3 +13,7 @@
 #include <Windows.h>
 #define _USE_MATH_DEFINES
 #include <math.h>
+
+
+//#define dprintf(...) 
+#define dprintf(...) printf(__VA_ARGS__)

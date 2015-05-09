@@ -84,7 +84,6 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationStarted(
     /* [in] */ FLOAT y)
 {
     m_cStartedEventCount++;
-    printf("ManipulationStarted\n");
     mm_gesture_begin();
     return S_OK;
 }
