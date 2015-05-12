@@ -44,10 +44,12 @@
     <ClCompile Include="src\table.c" />
     <ClCompile Include="src\textobj.c" />
     <ClCompile Include="src\vmath.c" />
+    <ClCompile Include="VoiceInput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CManipulationEventSink.h" />
     <ClInclude Include="mm.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="src\aiplayer.h" />
     <ClInclude Include="src\ball.h" />
     <ClInclude Include="src\billard.h" />
@@ -70,6 +72,10 @@
     <ClInclude Include="src\table.h" />
     <ClInclude Include="src\textobj.h" />
     <ClInclude Include="src\vmath.h" />
+    <ClInclude Include="VoiceInput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FooBillard.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F1A0B661-0BB3-432A-9AB2-E6F8D3B0D3E3}</ProjectGuid>
@@ -108,6 +114,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\VoiceInputCom\bin\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>
+      </CompileAsManaged>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

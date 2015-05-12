@@ -15,9 +15,14 @@ using System.Text.RegularExpressions;
 
 namespace FooBillardVoiceInput
 {
-
-    class Program
+      
+    public class Program
     {
+        static bool heardWord = false;
+        static volatile String lastCommand = "";
+        static volatile String lastInvalidCommand = "";
+        static ManualResetEvent _completed = null;
+        static String[] recognizedCommands;
 
         [DllImport("user32.dll")]
         static extern IntPtr GetForegroundWindow();
@@ -25,17 +30,33 @@ namespace FooBillardVoiceInput
         [DllImport("user32.dll")]
         static extern int GetWindowText(IntPtr hWnd, StringBuilder text, int count);
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //System.Collections.ObjectModel.ReadOnlyCollection<RecognizerInfo> recognizers=SpeechRecognitionEngine.InstalledRecognizers();
             //CultureInfo[] cultures=CultureInfo.GetCultures(CultureTypes.AllCultures);
 
             using (SpeechRecognitionEngine recog = new SpeechRecognitionEngine(new CultureInfo("en-US")))
             {
-                GrammarBuilder builder = new GrammarBuilder();
-                builder.AppendDictation();
-                builder.Culture = new CultureInfo("en-US");
-                Grammar grammar = new Grammar(builder);
+                _completed = new ManualResetEvent(false);
+
+                GrammarBuilder gb = new GrammarBuilder();
+                
+                Choices commands = new Choices();
+                recognizedCommands=new string[]{ "shoot", "que", "birdview","menu", "up", "down", "select" };
+                
+                /////////////////
+                commands.Add(recognizedCommands);
+                gb.Append(commands);
+                /////////////////
+                
+                /////////////////
+                //gb.AppendDictation();
+                //gb.Culture = new CultureInfo("en-US");
+                ////gb.Append("birdview");
+                /////////////////
+
+                // Create the Grammar instance.
+                Grammar grammar = new Grammar(gb);
 
                 recog.LoadGrammar(grammar);
 
@@ -49,11 +70,35 @@ namespace FooBillardVoiceInput
                 recog.RecognizeAsync(RecognizeMode.Multiple);
 
                 // Keep the console window open.
-                while (true)
-                {
-                    Console.ReadLine();
-                }
+                
+                Thread consoleThread = new Thread(keepConsoleOpen);
+                consoleThread.IsBackground = false;//if all foreground threads are done the process terminates, backgroundT dont need to be terminated
+                consoleThread.Start();
+                
+                //keepConsoleOpen();
+                _completed.WaitOne();
+                recog.Dispose();
             }
+        }
+
+        static void keepConsoleOpen()
+        {
+            while (true)
+            {
+               
+                //Console.WriteLine("hey");
+                Console.ReadLine();    
+            }
+        }
+
+
+        public static String[] getRecongizedCommads()
+        {
+            return recognizedCommands;
+        }
+
+        public static bool wordRecognised() {
+            return heardWord;
         }
 
         static void cmd(String cmd)
@@ -75,8 +120,59 @@ namespace FooBillardVoiceInput
             }
             return null;
         }
+        
+        public static String getLastCommand(){
+            String temp=lastCommand;
+            lastCommand="";
+            return temp;
+        }
+
+        public static String getLastInvalidCommand() {
+            String temp = lastInvalidCommand;
+            lastInvalidCommand = "";
+            return temp;
+        }
 
         static void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
+        {
+            if (e.Result == null || e.Result.Confidence<0.92) 
+                return;
+
+            //if atleast one time the a word was recognized
+            heardWord = true;
+
+            if (recognizedCommands.Contains(e.Result.Text))
+            {
+                Console.WriteLine("Recognized words: " + e.Result.Text);
+                //terminates speech recognition
+                if (e.Result.Text.Equals("finish"))
+                {
+                    _completed.Set();
+                    return;
+                }
+
+                //remember last valid command
+                lastCommand = e.Result.Text;
+
+            }
+
+            else
+            {
+                Console.WriteLine("Unrecognized words: " + e.Result.Text);
+                //terminates speech recognition
+                if (e.Result.Text.Equals("finish"))
+                {
+                    _completed.Set();
+                    return;
+                }
+
+                //remember last valid command
+                lastInvalidCommand = e.Result.Text;
+            }
+        }
+
+
+        /*static void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         {
             if (e.Result == null) return;
 
@@ -130,6 +226,8 @@ namespace FooBillardVoiceInput
                 Console.WriteLine("    Confidence score: " + phrase.Confidence);
             }
         }
+        */
+
 
         private const int APPCOMMAND_VOLUME_MUTE = 0x80000;
         private const int APPCOMMAND_VOLUME_UP = 0xA0000;

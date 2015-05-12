@@ -57,6 +57,7 @@
 #include <sys/time.h>    // us time measure
 #include <getopt.h>
 #else
+//#include <GL/glext.h>
 #include <GL/glext.h>
 #include "SDL.h"
 //   #include <sys/timeb.h>   // us time measure
@@ -4897,10 +4898,14 @@ void parse_gl_extensions_string(void)
   if (extension_rc_NV) {
     glCombinerParameteriNV = (PFNGLCOMBINERPARAMETERINVPROC)
       wglGetProcAddress("glCombinerParameteriNV");
-    glCombinerOutputNV = (PFNGLCOMBINEROUTPUTNVPROC)      wglGetProcAddress("glCombinerOutputNV");
-    glCombinerInputNV = (PFNGLCOMBINERINPUTNVPROC)      wglGetProcAddress("glCombinerInputNV");
-    glFinalCombinerInputNV = (PFNGLFINALCOMBINERINPUTNVPROC)      wglGetProcAddress("glFinalCombinerInputNV");
-    glCombinerParameterfvNV = (PFNGLCOMBINERPARAMETERFVNVPROC)      wglGetProcAddress("glCombinerParameterfvNV");
+    glCombinerOutputNV = (PFNGLCOMBINEROUTPUTNVPROC)
+      wglGetProcAddress("glCombinerOutputNV");
+    glCombinerInputNV = (PFNGLCOMBINERINPUTNVPROC)
+      wglGetProcAddress("glCombinerInputNV");
+    glFinalCombinerInputNV = (PFNGLFINALCOMBINERINPUTNVPROC)
+      wglGetProcAddress("glFinalCombinerInputNV");
+    glCombinerParameterfvNV = (PFNGLCOMBINERPARAMETERFVNVPROC)
+      wglGetProcAddress("glCombinerParameterfvNV");
     if (glCombinerParameteriNV == NULL
       || glCombinerOutputNV == NULL
       || glCombinerInputNV == NULL
@@ -5269,6 +5274,7 @@ int main(int argc, char *argv[])
 
   // ===
   mm_init();
+  voiceRecog_init();
   // ===
 
 #ifndef _WIN32

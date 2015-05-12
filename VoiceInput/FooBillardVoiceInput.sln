@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBillardVoiceInput", "FooBillardVoiceInput\FooBillardVoiceInput.csproj", "{9516FBCE-0113-4433-A51F-D4614A095C30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceInputCom", "VoiceInputCom\VoiceInputCom.csproj", "{0AA3DAA5-A68F-41E1-ADC2-715D680FF6BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9516FBCE-0113-4433-A51F-D4614A095C30} = {9516FBCE-0113-4433-A51F-D4614A095C30}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{9516FBCE-0113-4433-A51F-D4614A095C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9516FBCE-0113-4433-A51F-D4614A095C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9516FBCE-0113-4433-A51F-D4614A095C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA3DAA5-A68F-41E1-ADC2-715D680FF6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA3DAA5-A68F-41E1-ADC2-715D680FF6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA3DAA5-A68F-41E1-ADC2-715D680FF6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA3DAA5-A68F-41E1-ADC2-715D680FF6BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

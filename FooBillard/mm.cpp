@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "mm.h"
 #include <Windows.h>
 #include <windowsx.h>
