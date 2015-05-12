@@ -1,0 +1,229 @@
+\" ============================================================================
+\" Some macros, taken from perl(1).
+.de Vb \" Begin verbatim text
+.ft CW
+.nf
+.ne \\$1
+..
+.de Ve \" End verbatim text
+.ft R
+.fi
+..
+\" End of macro section
+\" ============================================================================
+.TH "FOOBILLARD" "6"
+.SH "NAME"
+foobillard \(em OpenGL billard game
+.SH "SYNOPSIS"
+.B foobillard
+.RI [ options ] 
+.SH "DESCRIPTION"
+.PP
+FooBillard is an OpenGL billard game for Linux. FooBillard is still under
+development, but the main physics are implemented. If you are a
+billard-pro and you're missing some physics, please contact the author.
+.SH "OPTIONS"
+.TP
+.BI \-\^\-p1 " ai|human" "\fR,\fP \-\^\-player1 "ai|human
+Set
+.I player1
+to be an ai (computer) or human player.
+.TP
+.BI \-\^\-p2 " ai|human" "\fR,\fP \-\^\-player2 "ai|human
+Set
+.I player2
+to be an ai (computer) or human player.
+.TP
+.BI \-\^\-name1 " NAME"
+Set the name of player1 to
+.I NAME.
+.TP
+.BI \-\^\-name2 " NAME"
+Set the name of player2 to
+.I NAME.
+.TP
+.BI \-\^\-8ball
+Play a game of 8-ball.
+.TP
+.BI \-\^\-9ball
+Play a game of 9-ball.
+.TP
+.BI \-\^\-carambol
+Play a game of carambol.
+.TP
+.BI \-\^\-snooker
+Play a game of snooker.
+.TP
+.BI \-\^\-tablecolor " COLOR"
+Table color in C-style hex notation
+.I <0xrrggbb>.
+.TP
+.BI \-\^\-edgecolor " COLOR"
+Edge color in C-style hex notation
+.I <0xrrggbb>.
+.TP
+.BI \-\^\-chromeblue
+Blue table with chrome edges.
+.TP
+.BI \-\^\-goldgreen
+Green table with gold edges.
+.TP
+.BI \-\^\-goldred
+Red table with gold edges.
+.TP
+.BI \-\^\-blackwhite
+Black table with white frame.
+.TP
+.BI \-\^\-blackbeige
+Beige table with black metal.
+.TP
+.BI \-\^\-tablesize " NUM"
+Set the table size (length) in foot to
+.I NUM
+(default: 7.0)
+.TP
+.BI \-\^\-lensflare "\fR,\fP \-\^\-nolensflare"
+Turn lensflare on or off.
+.TP
+.BI \-\^\-poslight
+Use positional light.
+.TP
+.BI \-\^\-dirlight
+Use directional light.
+.TP
+.BI \-\^\-ai1err " NUM"
+Set the errorlevel of the 1st ai player to
+.I NUM
+(0..1)
+.TP
+.BI \-\^\-ai2err " NUM"
+Set the errorlevel of the 2nd ai player to
+.I NUM
+(0..1)
+.TP
+.BI \-\^\-balldetail " l|m|h"
+Set the ball detail to [l]ow, [m]edium or [h]igh.
+.TP
+.BI \-\^\-rgstereo
+Start the game in stereo mode (red-green(cyan)).
+.TP
+.BI \-\^\-hostaddr " HOST"
+Play a network game with
+.I HOST
+as server. See the
+.I NETWORK GAMES
+section below for details.
+.TP
+.BI \-\^\-portnum " PORT"
+Use 
+.I PORT
+for the TCP connection. See the
+.I NETWORK GAMES
+section below for details.
+.TP
+.BI \-\^\-geometry " ARG"
+Set the window geometry to
+.I ARG
+(WIDTHxHEIGHT)
+.TP
+.BI \-\^\-fullscreen
+Play in fullscreen mode.
+.TP
+.BI \-\^\-freemove " ARG"
+Turn free move in external view mode on or off.
+.TP
+.BI \-\^\-cuberef " ARG"
+Turn rendered cubemap reflections on or off.
+.TP
+.BI \-\^\-cuberes " ARG"
+Texture size for cuberef (has to be a power of 2)
+.TP
+.BI \-\^\-bumpref " ARG"
+Turn bumpmap reflections of edges on or off.
+.TP
+.BI \-\^\-balltraces " ARG"
+Turn balltraces on or off.
+.TP
+.BI \-\^\-help
+Show an overview of available options.
+.SH "CONTROLS"
+.PP
+Overview of the keyboard/mouse functions available in FooBillard:
+.PP
+.Vb 20
+\&Mouse moving + button1             rotate
+\&Mouse moving + button2             zoom
+\&Mouse moving + hold b2 after b1    place cue ball
+\&Mouse moving + hold b1 after b2    adjust effet
+\&No mouse move + b1 after b2        toggle cue view on/off
+\&Mouse moving + button2 + Ctrl      FOV - adjust
+\&Mouse moving + button1 + Shift     place cue ball (when active)
+\&Mouse moving + button2 + Shift     cue offset adjust
+\&Mouse button 3                     shoot
+\&<space> or <enter>                 shoot
+\&<up>, <down>                       adjust strength
+\&<pg up>, <pg down>                 adjust strength
+\&<left>, <right>                    rotate
+\&<ESC>                              end game
+\&<0>                                suggest AI-shot
+\&<a>                                toggle current player AI/human
+\&<n>                                restart game
+\&<b>                                show FPS
+\&<v>                                turn vertical help-line on/off
+\&<c>, <F3>                          toggle cue view on/off
+\&<f>, <F4>                          toggle free move mode
+\&<r>                                toggle simpler reflections
+\&<s>                                toggle red/green stereo
+\&<F1>                               toggle help screen
+\&<F2>                               birdview (same as <F3>+<F4>+centered pos)
+.Ve
+.SH "CONFIG FILE"
+.PP
+You can place a config file named
+.I .foobillardrc
+in your home directory. The file can contain all possible commandline
+arguments (without the preceding dashes, and one line for each argument).
+Commandline parameters are parsed after reading the config file, so they
+override the
+.I .foobillardrc
+settings.
+.SH "NETWORK GAMES"
+.PP
+To start a network game :
+.PP
+Hit <ESC> to get to the menu,
+.PP
+Select <Network Game>/<As Host> on one computer and
+<Network Game>/<Join>/<OK> on the other machine after having set the
+proper IP in <Network Game>/<Join>/<IP>.
+.PP
+The <Network Game>/<Port> setting must be the same on both machines.
+.PP
+The IP of the host machine can also be set on the client machine 
+(the joining one), by adding hostaddr=IP-ADDR in the config file 
+(see below), or by passing it as commandline option:
+--hostaddr=IP-ADDR
+.PP
+Starting from menu the host sends its gamestate variables to the
+client, so every clienside settings get overriden by the host
+(gametype, tablesize, player names, ...)
+.PP
+The data sent between the two computers are only the shot-data, like strength,
+cue offset and direction. So if the two machines have a different internal
+floating point accuracy, the games may drift apart after a certain amount of
+time.
+.SH "SEE ALSO"
+.PP
+FooBillard homepage:
+.I http://foobillard.sunsite.dk/
+.PP
+.SH "AUTHOR"
+.PP
+FooBillard was written by
+.I Florian Berger
+<harpin_floh@yahoo.de>
+.PP
+This manpage was written by Wouter Eerdekens <retuow@xs4all.be> for the
+.I Debian GNU/Linux
+system (but may be used by others).
+

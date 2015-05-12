@@ -89,6 +89,7 @@ static int in_strafraum(VMvect pos)
   return(pos.y < -TABLE_L / 4.0);
 }
 
+void mm_placing_cue_ball();
 
 void evaluate_last_move_8ball(struct Player * player, int * pact_player,
   BallsType * pballs, int * pqueue_view, float * pXque)
@@ -244,6 +245,12 @@ void evaluate_last_move_8ball(struct Player * player, int * pact_player,
     *pXque = player[act_player].Xque;
     *pqueue_view = player[act_player].queue_view;
   }
+
+  // == 
+  if (!player[act_player].is_AI && player[act_player].place_cue_ball)
+      mm_placing_cue_ball();
+  //==
+
 #undef balls
 #undef act_player
 }

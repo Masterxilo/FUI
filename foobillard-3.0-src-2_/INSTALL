@@ -1,0 +1,14 @@
+BUILDING:
+---------
+
+simply type:
+
+  configure
+  make
+  make install
+
+if you want to enable the use of SDL instead of GLUT type:
+
+  configure --enable-SDL
+  make
+  make install

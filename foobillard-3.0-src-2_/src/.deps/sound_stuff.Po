@@ -1,0 +1,123 @@
+sound_stuff.o sound_stuff.o: sound_stuff.c sound_stuff.h options.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h \
+  D:/msys/1.0/include/SDL/SDL.h D:/msys/1.0/include/SDL/SDL_main.h \
+  D:/msys/1.0/include/SDL/SDL_stdinc.h \
+  D:/msys/1.0/include/SDL/SDL_config.h \
+  D:/msys/1.0/include/SDL/SDL_platform.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/strings.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/inttypes.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdint.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/ctype.h \
+  D:/msys/1.0/include/SDL/begin_code.h \
+  D:/msys/1.0/include/SDL/close_code.h \
+  D:/msys/1.0/include/SDL/SDL_audio.h D:/msys/1.0/include/SDL/SDL_error.h \
+  D:/msys/1.0/include/SDL/SDL_endian.h \
+  D:/msys/1.0/include/SDL/SDL_mutex.h \
+  D:/msys/1.0/include/SDL/SDL_thread.h \
+  D:/msys/1.0/include/SDL/SDL_rwops.h D:/msys/1.0/include/SDL/SDL_cdrom.h \
+  D:/msys/1.0/include/SDL/SDL_cpuinfo.h \
+  D:/msys/1.0/include/SDL/SDL_events.h \
+  D:/msys/1.0/include/SDL/SDL_active.h \
+  D:/msys/1.0/include/SDL/SDL_keyboard.h \
+  D:/msys/1.0/include/SDL/SDL_keysym.h \
+  D:/msys/1.0/include/SDL/SDL_mouse.h D:/msys/1.0/include/SDL/SDL_video.h \
+  D:/msys/1.0/include/SDL/SDL_joystick.h \
+  D:/msys/1.0/include/SDL/SDL_quit.h D:/msys/1.0/include/SDL/SDL_loadso.h \
+  D:/msys/1.0/include/SDL/SDL_timer.h \
+  D:/msys/1.0/include/SDL/SDL_version.h \
+  D:/msys/1.0/include/SDL/SDL_audio.h \
+  d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/math.h
+
+sound_stuff.h:
+
+options.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/gl.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/GL/glext.h:
+
+D:/msys/1.0/include/SDL/SDL.h:
+
+D:/msys/1.0/include/SDL/SDL_main.h:
+
+D:/msys/1.0/include/SDL/SDL_stdinc.h:
+
+D:/msys/1.0/include/SDL/SDL_config.h:
+
+D:/msys/1.0/include/SDL/SDL_platform.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/sys/types.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/_mingw.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stddef.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdio.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/include/stdarg.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdlib.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/string.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/strings.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/inttypes.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/stdint.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/ctype.h:
+
+D:/msys/1.0/include/SDL/begin_code.h:
+
+D:/msys/1.0/include/SDL/close_code.h:
+
+D:/msys/1.0/include/SDL/SDL_audio.h:
+
+D:/msys/1.0/include/SDL/SDL_error.h:
+
+D:/msys/1.0/include/SDL/SDL_endian.h:
+
+D:/msys/1.0/include/SDL/SDL_mutex.h:
+
+D:/msys/1.0/include/SDL/SDL_thread.h:
+
+D:/msys/1.0/include/SDL/SDL_rwops.h:
+
+D:/msys/1.0/include/SDL/SDL_cdrom.h:
+
+D:/msys/1.0/include/SDL/SDL_cpuinfo.h:
+
+D:/msys/1.0/include/SDL/SDL_events.h:
+
+D:/msys/1.0/include/SDL/SDL_active.h:
+
+D:/msys/1.0/include/SDL/SDL_keyboard.h:
+
+D:/msys/1.0/include/SDL/SDL_keysym.h:
+
+D:/msys/1.0/include/SDL/SDL_mouse.h:
+
+D:/msys/1.0/include/SDL/SDL_video.h:
+
+D:/msys/1.0/include/SDL/SDL_joystick.h:
+
+D:/msys/1.0/include/SDL/SDL_quit.h:
+
+D:/msys/1.0/include/SDL/SDL_loadso.h:
+
+D:/msys/1.0/include/SDL/SDL_timer.h:
+
+D:/msys/1.0/include/SDL/SDL_version.h:
+
+D:/msys/1.0/include/SDL/SDL_audio.h:
+
+d:/mingw/bin/../lib/gcc/mingw32/3.4.2/../../../../include/math.h:

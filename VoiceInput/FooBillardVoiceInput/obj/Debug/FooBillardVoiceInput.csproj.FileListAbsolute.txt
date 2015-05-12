@@ -9,6 +9,7 @@ D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBil
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.pdb
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe
 D:\UNIFR\FUI_SP2015\Project\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.pdb
+<<<<<<< HEAD
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe.config
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.exe
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.pdb
@@ -17,3 +18,11 @@ C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillard
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\VoiceInputCom.dll
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\VoiceInputCom.pdb
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.csprojResolveAssemblyReference.cache
+=======
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe.config
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.exe
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.pdb
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.pdb
+E:\Dropbox\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.csprojResolveAssemblyReference.cache
+>>>>>>> 59bf476b20bb17369e845570e556355a4475502b

@@ -1,0 +1,124 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(src/billard3d.c)
+
+AM_INIT_AUTOMAKE(foobillard, 3.0)
+AM_CONFIG_HEADER(src/config.h)
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_CXX
+AC_PROG_INSTALL
+
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(limits.h unistd.h math.h stdlib.h stdio.h ft2build.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_INLINE
+
+AC_PATH_XTRA
+
+dnl Checks for library functions.
+AC_CHECK_FUNCS(socket poll)
+
+
+dnl Check for SDL-stuff
+
+AC_ARG_ENABLE(SDL, 
+              [  --enable-SDL            use SDL-lib instead of glut (default)],
+              [ use_sdl=$enableval ])
+#              [export USE_SDL=yes], [export USE_SDL=no])
+              
+AC_ARG_ENABLE(glut, 
+              [  --enable-glut           use glut instead of SDL-lib],
+              [ use_glut=$enableval ])
+#              [export USE_SDL=no], [export USE_SDL=yes])
+              
+if test "x$use_sdl" = "xyes" ; then
+    export USE_SDL=yes
+    export USE_GLUT=no
+elif test "x$use_sdl" = "xno" ; then
+    if test "x$use_glut" = "xno" ; then
+        AC_MSG_WARN("You disabled SDL and glut.  Automatically enabling SDL for you.")
+        export USE_SDL=yes
+        export USE_GLUT=no
+    else
+        export USE_SDL=no
+        export USE_GLUT=yes
+    fi
+else
+    if test "x$use_glut" = "xyes" ; then
+        export USE_SDL=no
+        export USE_GLUT=yes
+    else
+        export USE_SDL=yes
+        export USE_GLUT=no
+    fi
+fi
+AC_MSG_CHECKING("for SDL support")
+AC_MSG_RESULT("$USE_SDL")
+AC_MSG_CHECKING("for glut support")
+AC_MSG_RESULT("$USE_GLUT")
+
+               
+AC_ARG_ENABLE(debug, 
+              [  --enable-debug          compile in debug messages],
+              [export USE_DEBUG=yes], [export USE_DEBUG=no])
+              
+AC_ARG_ENABLE(nvidia, 
+              [  --enable-nvidia[=ARG]   enable NV-extensions [default=yes] ],
+              [ if   test "x$enableval" = "xyes" ; then
+                   export USE_NVIDIA=yes
+                elif 	test "x$enableval" = "xon" ; then
+                   export USE_NVIDIA=yes
+                elif 	test "x$enableval" = "xoff" ; then
+                   export USE_NVIDIA=no
+                elif 	test "x$enableval" = "xno" ; then
+                   export USE_NVIDIA=no
+                else
+                   export USE_NVIDIA=yes
+                fi
+              ],
+              [export USE_NVIDIA=yes])
+              
+AC_ARG_ENABLE(sound, 
+              [  --enable-sound[=ARG]    enable sound [default=yes] ],
+              [ if   test "x$enableval" = "xyes" ; then
+                   export USE_SOUND=yes
+                elif 	test "x$enableval" = "xon" ; then
+                   export USE_SOUND=yes
+                elif 	test "x$enableval" = "xoff" ; then
+                   export USE_SOUND=no
+                elif 	test "x$enableval" = "xno" ; then
+                   export USE_SOUND=no
+                else
+                   export USE_SOUND=yes
+                fi
+              ],
+              [export USE_SOUND=yes])
+              
+#AC_ARG_ENABLE(SDL,
+#              AC_HELP_STRING([--enable-SDL],[use SDL-lib instead of glut (default no)]),
+#	      [case "${enableval}" in
+#                yes) USE_SDL=$HAVE_SDL ;;
+#                no)  USE_SDL=no ;;
+#                *) AC_MSG_ERROR(bad value ${enableval} for --enable-SDL) ;;
+#              esac], 
+#              [USE_SDL=no) dnl Default value
+
+AM_CONDITIONAL(USE_DEBUG, test "x$USE_DEBUG" = "xyes")
+
+AM_CONDITIONAL(USE_SDL, test "x$USE_SDL" = "xyes")
+
+AM_CONDITIONAL(USE_NVIDIA, test "x$USE_NVIDIA" = "xyes")
+
+AM_CONDITIONAL(USE_SOUND, test "x$USE_SOUND" = "xyes")
+
+AC_OUTPUT(Makefile 
+          foobillard.spec 
+	  foobillard-SDL.spec 
+	  src/Makefile 
+	  data/Makefile )
