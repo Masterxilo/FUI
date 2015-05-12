@@ -2933,7 +2933,7 @@ void Display_tournament_tree(struct TournamentState_ * ts)
 }
 
 
-void draw_text(int x, int y, char* s, int height) {
+void draw_text(int x, int y, const char* s, int height) {
 	// === custom text
 	textObj* text = textObj_new(s, options_ball_fontname, height);
 	glPushMatrix();
@@ -2983,6 +2983,7 @@ void draw_circle(float x, float y, float radius)
 extern GLdouble modelview[16];
 extern GLdouble projection[16];
 extern GLint viewport[4];
+extern int touchmode;
 // ==
 
 void DisplayFunc(void)
@@ -3286,6 +3287,7 @@ void DisplayFunc(void)
              glVertex3f(balls.ball[0].r.x,balls.ball[0].r.y,balls.ball[0].r.z);
              glVertex3f(balls.ball[0].r.x+comp_dir.x,balls.ball[0].r.y+comp_dir.y,balls.ball[0].r.z+comp_dir.z);
              glEnd();*/
+		if (!touchmode)
       draw_queue(balls.ball[CUE_BALL_IND].r, Xque, Zque, queue_offs,
         queue_point_x, queue_point_y,
         spheretexbind, lightpos, lightnr);
@@ -3717,6 +3719,7 @@ void DisplayFunc(void)
 		// Custom window based 2d drawing
 		// modify projection
 		glMatrixMode(GL_PROJECTION);
+		glPushMatrix();
 		glOrtho(0, win_width, win_height, 0, -1, 1);
 
 		glMatrixMode(GL_MODELVIEW);
@@ -3729,6 +3732,11 @@ void DisplayFunc(void)
 		mm_draw_2d();
 
 		glPopMatrix();
+
+
+		glMatrixMode(GL_PROJECTION);
+		glPopMatrix();
+		glMatrixMode(GL_MODELVIEW);
 
 		glEnable(GL_DEPTH_TEST);
 		glDisable(GL_BLEND);

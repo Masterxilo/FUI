@@ -12,17 +12,20 @@
 #include <gl/GL.h>
 using namespace std;
 
-bool allowDebug = 0;
+bool allowDebug = 1;
 
 // External access
 extern "C" {
+
+	int touchmode = 0;
+
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
 	void draw_circle(float x, float y, float radius);
 
 	void draw_rect(int x, int y, int w, int h);
 
-	void draw_text(int x, int y, char* s, int height);
+	void draw_text(int x, int y, const char* s, int height);
 	extern int queue_view;
 	void
 		toggle_queue_view();
@@ -120,6 +123,8 @@ int cx = 0, cy = 0, cw = 300, ch = 100;
 
 // Ball region
 double ballrad = 150;
+#include <string>
+std::string lastRecognized, lastAction;
 extern "C" {
 
 	void mm_draw_2d() {
@@ -128,7 +133,9 @@ extern "C" {
 		cy = win_height / 4 - ch / 2;
 
 		draw_text(10,10,"",40); //doesn't draw the circle around the balls otherwise
-		
+		draw_text(20, 100, ("You said: " + lastRecognized).c_str(), 40);
+		draw_text(20, 120, ("Last voice action: " + lastAction).c_str(), 40);
+		if (touchmode)
 		if (placing_cue_ball) {
 			draw_text(cx + cw / 2 - 60, cy + ch - 10, "Put here!", 40);
 
@@ -465,6 +472,9 @@ extern "C" {
 			dprintf("hwnd %d, hhook %d\n", hWnd, hhook);
 		}
 		touchInit(hWnd);
+
+		if (!touchmode)
+			MouseEventEnabled = 1;
 	}
 
 }

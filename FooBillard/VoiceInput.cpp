@@ -63,6 +63,9 @@ extern "C" {
 	}
 }
 
+
+extern std::string lastRecognized, lastAction;
+
 void fetchThread(){
 	CoInitialize(NULL);
 	VoiceInputCom::IVoiceInputComObjectPtr p(__uuidof(VoiceInputCom::VoiceInputComObject));
@@ -72,6 +75,9 @@ void fetchThread(){
 
 	std::vector<std::string> commands;
 	commands.push_back("shoot");
+	//commands.push_back("children");
+	//commands.push_back("should");
+	
 	commands.push_back("que");
 	commands.push_back("Q.");//cue
 	commands.push_back("birdview");
@@ -84,7 +90,8 @@ void fetchThread(){
 	while (true){
 		std::string unrecognized = p->getLastInvalidCommand();
 		if ((!unrecognized.empty()) && !(std::find(commands.begin(), commands.end(), unrecognized) != commands.end())){
-			printf("Unrecognized command: %s",unrecognized.c_str());
+			printf("Unrecognized command: %s", unrecognized.c_str());
+			lastRecognized = unrecognized;
 		}
 
 
@@ -92,38 +99,46 @@ void fetchThread(){
 		if (!input.empty()){
 			//if (!(p->getRecognizedCommands()[0]=="shoot"))
 				//int a =5;
-			if (input.compare("shoot") == 0){
+			//if (input == "shoot" || input == "children" || input == "should"){
+			if (input == "shoot"){
 				printf("HeyheyHey");
+				lastAction = "Shooting!";
 				shoot(0);
 				//birdview();
 			}
 			else if (input.compare("que") == 0 || input.compare("Q.") == 0){
 				printf("ready now");
+				lastAction = "que!";
 				Key(KSYM_F3,0);
 
 			}
 			else if (input.compare("birdview") == 0){
 				printf("ready now");
+				lastAction = "bird!";
 				Key(KSYM_F2, 0);
 
 			}
 			else if (input.compare("menu") == 0){
 				printf("ready now");
-				Key(27, 0);
+				lastAction = "menu!";
+				Key(27, 0); // esc
 			}
 
 			else if (input.compare("down") == 0){
 				printf("ready now");
+				lastAction = "down!";
 				Key(KSYM_DOWN, 0);
 			}
 
 			else if (input.compare("up") == 0){
 				printf("ready now");
+				lastAction = "up!";
 				Key(KSYM_UP, 0);
 			}
 
 			else if (input.compare("select") == 0){
 				printf("ready now");
+				lastAction = "select!";
 				Key(13, 0);
 			}
 

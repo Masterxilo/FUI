@@ -45,13 +45,13 @@ namespace FooBillardVoiceInput
                 recognizedCommands=new string[]{ "shoot", "que", "birdview","menu", "up", "down", "select" };
                 
                 /////////////////
-                //commands.Add(recognizedCommands);
-                //gb.Append(commands);
+                commands.Add(recognizedCommands);
+                gb.Append(commands);
                 /////////////////
                 
                 /////////////////
-                gb.AppendDictation();
-                gb.Culture = new CultureInfo("en-US");
+                //gb.AppendDictation();
+                //gb.Culture = new CultureInfo("en-US");
                 ////gb.Append("birdview");
                 /////////////////
 
