@@ -2040,9 +2040,9 @@ int main(int argc, char *argv[])
 
     /* config  */
     SetProcessDPIAware();
-    fullscreen = 1;
-    win_width = 1600 * (fullscreen + 1);// 512;
-    win_height = 900 * (fullscreen + 1);// 512;
+    fullscreen = 0;
+    win_width = 1024 * (fullscreen + 1);// 512;
+    win_height = 768 * (fullscreen + 1);// 512;
 
 
     /* for Win32, this call sets the flag first in sys_stuff.c before init */
