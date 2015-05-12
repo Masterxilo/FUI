@@ -3,8 +3,8 @@
 extern "C" {
 #endif
 
-    void mm_init();
-
+	void mm_init();
+	void mm_draw_2d();
 #ifdef __cplusplus
 }
 #endif

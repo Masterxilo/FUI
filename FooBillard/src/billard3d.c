@@ -7,7 +7,7 @@
 **    This program is free software; you can redistribute it and/or modify
 **    it under the terms of the GNU General Public License Version 2 as
 **    published by the Free Software Ffoundation;
-**
+**f
 **    This program is distributed in the hope that it will be useful,
 **    but WITHOUT ANY WARRANTY; without even the implied warranty of
 **    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -209,7 +209,7 @@ static GLfloat queue_offs = 0.06;
 #define queue_point_y  (player[act_player].cue_y)
 #define queue_strength (player[act_player].strength)
 
-static int  balls_moving = 0;
+int  balls_moving = 0;
 
 /* reflection map */
 static int    spheretexw, spheretexh;
@@ -2932,12 +2932,54 @@ void Display_tournament_tree(struct TournamentState_ * ts)
   glDisable(GL_BLEND);
 }
 
-// ==
-/*extern GLdouble* modelview;
-extern GLdouble* projection;
-extern GLint   * viewport;
-*/
 
+void draw_text(int x, int y, char* s, int height) {
+	// === custom text
+	textObj* text = textObj_new(s, options_ball_fontname, height);
+	glPushMatrix();
+
+	// Screen goes from -1 to 1 in both directions, (0,0) is the center of the screen
+	glTranslatef(x, y, 0);
+	glScalef(1, -1, 0); // invert because the screen is upside down
+	textObj_draw(text);
+
+	glPopMatrix();
+	textObj_delete(text);
+}
+
+void draw_rect(int x, int y, int w, int h)
+{
+	glPushMatrix();  //Make sure our transformations don't affect any other transformations in other code
+	glTranslatef(x, y, 0);  //Translate rectangle to its assigned x and y position
+	//Put other transformations here
+	glBegin(GL_LINE_LOOP);   //We want to draw a quad, i.e. shape with four sides
+	glVertex2f(0, 0);            //Draw the four corners of the rectangle
+	glVertex2f(0, h);
+	glVertex2f(w, h);
+	glVertex2f(w, 0);
+	glEnd();
+	glPopMatrix();
+}
+
+void draw_circle(float x, float y, float radius)
+{
+	glPushMatrix();  //Make sure our transformations don't affect any other transformations in other code
+	glTranslatef(x, y, 0);  //Translate rectangle to its assigned x and y position
+
+	glBegin(GL_LINE_LOOP);
+
+	for (int i = 0; i < 360; i++)
+	{
+		float degInRad = i*(M_PI / 180);
+		glVertex2f(cos(degInRad)*radius, sin(degInRad)*radius);
+	}
+
+	glEnd();
+
+	glPopMatrix();
+}
+
+// ==
 extern GLdouble modelview[16];
 extern GLdouble projection[16];
 extern GLint viewport[4];
@@ -3177,12 +3219,12 @@ void DisplayFunc(void)
       glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
-    // ==
-    // Store matrices
-    glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
-    glGetDoublev(GL_PROJECTION_MATRIX, projection);
-    glGetIntegerv(GL_VIEWPORT, viewport);
-    // ==
+	// ==
+	// Store matrices
+	glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
+	glGetDoublev(GL_PROJECTION_MATRIX, projection);
+	glGetIntegerv(GL_VIEWPORT, viewport);
+	// ==
 
     /* draw table */
     glCallList(table_obj);
@@ -3671,52 +3713,25 @@ void DisplayFunc(void)
         if (helpscreen_on) draw_help_screen(win_width, win_height);
 
         glPopMatrix();
-        // === custom text
-        text = textObj_new("Hello, World!", options_ball_fontname, 23);
-        glPushMatrix();
+		// ===
+		// Custom window based 2d drawing
+		// modify projection
+		glMatrixMode(GL_PROJECTION);
+		glOrtho(0, win_width, win_height, 0, -1, 1);
 
-        // Screen goes from -1 to 1 in both directions, (0,0) is the center of the screen
-        glTranslatef(-0.95, 0.87, 0);
-        glScalef(2.0 / win_width*win_height / 768.0, 2.0 / 768.0, 1.0);
-        textObj_draw(text);
+		glMatrixMode(GL_MODELVIEW);
 
-        glPopMatrix();
-        textObj_delete(text);
-
-        // Custom drawing
-        // modify projection
-        glMatrixMode(GL_PROJECTION);
-       // glPushMatrix(); glLoadIdentity();
-        //gluOrtho2D(0, 0, win_width, win_height);
-        glOrtho(0, 0, win_width, win_height, -1, 1);
+		glColor3f(0.7, 0.7, 0.7);
+		glPushMatrix();
+		glLoadIdentity();
 
 
-        glMatrixMode(GL_MODELVIEW);
-        glPushMatrix();
-        glLoadIdentity();
-        // debug
+		mm_draw_2d();
 
-        glGetDoublev(GL_PROJECTION_MATRIX, projection);
-       /* printf("GL_PROJECTION_MATRIX ");
-        for (int i = 0; i <Ke 16; i++){
-            GLdouble d = projection[i]; printf("%f ", d);
-        }
-        printf("\n");
-        */
-        // Could do matrix manipulations here
-        glBegin(GL_LINE_STRIP);
-        glVertex2f(0, 0);
-        glVertex2f(0.1,0.1);
+		glPopMatrix();
 
-        glVertex2f(100,100);
-        glEnd();
-
-        glPopMatrix();
-
-        // Reset projection
-        glMatrixMode(GL_PROJECTION);
-        glPopMatrix();
-        glMatrixMode(GL_MODELVIEW);
+		glEnable(GL_DEPTH_TEST);
+		glDisable(GL_BLEND);
 
         // ===
 
