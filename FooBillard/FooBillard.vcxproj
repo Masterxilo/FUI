@@ -114,7 +114,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI2\FUI\VoiceInput\VoiceInputCom\bin\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\VoiceInput\VoiceInputCom\bin\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>
       </CompileAsManaged>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

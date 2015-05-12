@@ -17,7 +17,7 @@ bool allowDebug = 1;
 // External access
 extern "C" {
 
-	int touchmode = 0;
+	int touchmode = 1;
 
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
