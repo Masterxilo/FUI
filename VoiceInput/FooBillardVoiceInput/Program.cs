@@ -19,9 +19,10 @@ namespace FooBillardVoiceInput
     public class Program
     {
         static bool heardWord = false;
+        static Dictionary<SpeechRecognitionEngine, ManualResetEvent> resets = new Dictionary<SpeechRecognitionEngine, ManualResetEvent>();
         static volatile String lastCommand = "";
-        static volatile String lastInvalidCommand = "";
-        static ManualResetEvent _completed = null;
+        static volatile String lastSpokenPhrase = "";
+        //static ManualResetEvent _completed = null;
         static String[] recognizedCommands;
 
         [DllImport("user32.dll")]
@@ -32,28 +33,55 @@ namespace FooBillardVoiceInput
 
         public static void Main(string[] args)
         {
+            //only the first of these will run if they are not in seperate threads
+            startRecogThread(true);
+            //startRecogThread(false);
+        }
+
+        public static void startRecogThread(bool useLimitedDictionary)
+        {
             //System.Collections.ObjectModel.ReadOnlyCollection<RecognizerInfo> recognizers=SpeechRecognitionEngine.InstalledRecognizers();
             //CultureInfo[] cultures=CultureInfo.GetCultures(CultureTypes.AllCultures);
 
             using (SpeechRecognitionEngine recog = new SpeechRecognitionEngine(new CultureInfo("en-US")))
             {
-                _completed = new ManualResetEvent(false);
+                resets.Add(recog,new ManualResetEvent(false));
+                
+                //_completed = new ManualResetEvent(false);
 
                 GrammarBuilder gb = new GrammarBuilder();
-                
+
                 Choices commands = new Choices();
-                recognizedCommands=new string[]{ "shoot", "que", "birdview","menu", "up", "down", "select" };
+                recognizedCommands = new string[] { "shoot","hit","push", 
+                                                    "stronger", "much stronger",
+                                                    "weaker", "much weaker",
+                                                   
+                                                    "que",
+                                                    "birdview",
+
+                                                    "menu",
+                                                    "select",
+                                                    "up", 
+                                                    "down",
+
+                                                    "commands", "help", "what can I say"};
+
+                if (useLimitedDictionary)
+                {
+                    /////////////////
+                    commands.Add(recognizedCommands);
+                    gb.Append(commands);
+                    /////////////////
+                }
+
+                else
+                {
+                    /////////////////
+                    gb.AppendDictation();
+                    gb.Culture = new CultureInfo("en-US");
+                    /////////////////
+                }
                 
-                /////////////////
-                commands.Add(recognizedCommands);
-                gb.Append(commands);
-                /////////////////
-                
-                /////////////////
-                //gb.AppendDictation();
-                //gb.Culture = new CultureInfo("en-US");
-                ////gb.Append("birdview");
-                /////////////////
 
                 // Create the Grammar instance.
                 Grammar grammar = new Grammar(gb);
@@ -61,7 +89,12 @@ namespace FooBillardVoiceInput
                 recog.LoadGrammar(grammar);
 
                 // Add a handler for the speech recognized event.
-                recog.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(speechRecognized);
+                if(useLimitedDictionary){
+                    recog.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(FoundCommandWord);
+                }
+                else{
+                    recog.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(FoundAnyWord);
+                }
                 //  sre.SpeechHypothesized += new EventHandler<SpeechRecognizedEventArgs>(speechRecognized);
                 // Configure input to the speech recognizer.
                 recog.SetInputToDefaultAudioDevice();
@@ -70,15 +103,15 @@ namespace FooBillardVoiceInput
                 recog.RecognizeAsync(RecognizeMode.Multiple);
 
                 // Keep the console window open.
-                
                 Thread consoleThread = new Thread(keepConsoleOpen);
                 consoleThread.IsBackground = false;//if all foreground threads are done the process terminates, backgroundT dont need to be terminated
                 consoleThread.Start();
-                
+
                 //keepConsoleOpen();
-                _completed.WaitOne();
+                resets[recog].WaitOne();
                 recog.Dispose();
             }
+
         }
 
         static void keepConsoleOpen()
@@ -100,26 +133,6 @@ namespace FooBillardVoiceInput
         public static bool wordRecognised() {
             return heardWord;
         }
-
-        static void cmd(String cmd)
-        {
-            string strCmdText;
-            strCmdText = "/C " + cmd;
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-        }
-
-        private static string GetActiveWindowTitle()
-        {
-            const int nChars = 256;
-            StringBuilder Buff = new StringBuilder(nChars);
-            IntPtr handle = GetForegroundWindow();
-
-            if (GetWindowText(handle, Buff, nChars) > 0)
-            {
-                return Buff.ToString();
-            }
-            return null;
-        }
         
         public static String getLastCommand(){
             String temp=lastCommand;
@@ -127,13 +140,39 @@ namespace FooBillardVoiceInput
             return temp;
         }
 
-        public static String getLastInvalidCommand() {
-            String temp = lastInvalidCommand;
-            lastInvalidCommand = "";
+        public static String getLastSpokenPhrase()
+        {
+            String temp = lastSpokenPhrase;
+            lastSpokenPhrase = "";
             return temp;
         }
 
-        static void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
+        static void FoundAnyWord(object sender, SpeechRecognizedEventArgs e)
+        {
+            if (e.Result == null || e.Result.Confidence < 0.92)
+                return;
+
+            //if atleast one time the a word was recognized
+            heardWord = true;
+
+            //terminates speech recognition
+            if (e.Result.Text.Equals("finish"))
+            {
+                Console.WriteLine("finished");
+                resets[(SpeechRecognitionEngine)sender].Set();
+                //_completed.Set();
+                return;
+            }
+
+            //if (!recognizedCommands.Contains(e.Result.Text))
+            //{
+                //Console.WriteLine("Unrecognized words: " + e.Result.Text);
+                //remember last valid command
+                lastSpokenPhrase = e.Result.Text;
+            //}
+        }
+
+        static void FoundCommandWord(object sender, SpeechRecognizedEventArgs e)
         {
             if (e.Result == null || e.Result.Confidence<0.92) 
                 return;
@@ -141,34 +180,21 @@ namespace FooBillardVoiceInput
             //if atleast one time the a word was recognized
             heardWord = true;
 
-            if (recognizedCommands.Contains(e.Result.Text))
+            //terminates speech recognition
+            if (e.Result.Text.Equals("finish"))
             {
-                Console.WriteLine("Recognized words: " + e.Result.Text);
-                //terminates speech recognition
-                if (e.Result.Text.Equals("finish"))
-                {
-                    _completed.Set();
-                    return;
-                }
+                Console.WriteLine("finished");
+                resets[(SpeechRecognitionEngine)sender].Set();
+                //_completed.Set();
+                return;
+            }
 
+            //if (recognizedCommands.Contains(e.Result.Text))
+            //{
+                //Console.WriteLine("Recognized words: " + e.Result.Text);
                 //remember last valid command
                 lastCommand = e.Result.Text;
-
-            }
-
-            else
-            {
-                Console.WriteLine("Unrecognized words: " + e.Result.Text);
-                //terminates speech recognition
-                if (e.Result.Text.Equals("finish"))
-                {
-                    _completed.Set();
-                    return;
-                }
-
-                //remember last valid command
-                lastInvalidCommand = e.Result.Text;
-            }
+            //}
         }
 
 
@@ -237,130 +263,5 @@ namespace FooBillardVoiceInput
         [DllImport("user32.dll")]
         public static extern IntPtr SendMessageW(IntPtr hWnd, int Msg,
             IntPtr wParam, IntPtr lParam);
-
-        private static void btnMute_Click()
-        {
-            SendMessageW(GetForegroundWindow(), WM_APPCOMMAND, GetForegroundWindow(),
-                  (IntPtr)APPCOMMAND_VOLUME_MUTE);
-        }
-
-        private static void btnDecVol_Click()
-        {
-            SendMessageW(GetForegroundWindow(), WM_APPCOMMAND, GetForegroundWindow(),
-                  (IntPtr)APPCOMMAND_VOLUME_DOWN);
-        }
-
-        private static void btnIncVol_Click()
-        {
-            SendMessageW(GetForegroundWindow(), WM_APPCOMMAND, GetForegroundWindow(),
-                  (IntPtr)APPCOMMAND_VOLUME_UP);
-        }
-
-        // Handle the SpeechRecognized event.
-        static void speechRecognized(object sender, SpeechRecognizedEventArgs e)
-        {
-
-            SpeechRecognizedHandler(sender, e);
-            string t = e.Result.Text;
-            if (doit(t)) return;
-            foreach (RecognizedPhrase phrase in e.Result.Alternates)
-            {
-                if (doit(phrase.Text)) return;
-            }
-        }
-        static int ss = 10; // volume steps /2
-        static bool doit(string t)
-        {
-            //Console.WriteLine(GetActiveWindowTitle());
-            if (t == "start chrome" || t == "start from") { cmd("ch.bat"); return true; }
-            if (t == "decrease volume" || t == "reduce volume" || t == "reduce the volume" || t == "turn down the volume" || t == "reduced volume" || t == "not so loud" || t == "degrees volume"
-              || t == "decreasing volume" || t == "reducing volume"
-              || t == "make more slient"
-              || t == "decrease the volume" || t == "decreased the volume"
-              || t == "decrease a volume"
-              )
-            {
-                for (int i = 0; i < ss; i++) btnDecVol_Click();
-                return true;
-            }
-
-
-            if (t == "increase volume" || t == "increase volume" || t == "increase in volume" || t == "increased volume" || t == "make much louder" || t == "louder" || t == "turn up the volume" || t == "make louder"
-              || t == "increases volume"
-              || t == "increase the volume"
-              )
-            {
-                for (int i = 0; i < ss; i++) btnIncVol_Click();
-                return true;
-            }
-
-            if (t == "turn sound off" || t == "turn off sound" || t == "sound off" || t == "turn sound on" || t == "turn on sound" || t == "sound on" || t == "sound of" || t == "disable sound" || t == "enable sound" || t == "enables sound" || t == "shut up" || t == "shutup" || t == "toggle sound" || t == "no sound" || t == "unmute" || t == "mute" | t == "enable some")
-            {
-                btnMute_Click();
-                return true;
-            }
-            if (t == "open new tab"
-              || t == "open you tab" || t == "open you to" || t == "open your tab"
-              || t == "start you tab"
-              || t == "start new tab" || t == "create new tab" || t == "create a new tab"
-              || t == "you tab"
-              || t == "new tab"
-
-              || t == "open new tap" || t == "open a new tap"
-              || t == "open you tap"
-              || t == "start you tap"
-              || t == "start new tap"
-              || t == "you tap"
-              || t == "new tap"
-              )
-            {
-                SendKeys.SendWait("^t"); return true;
-            }
-
-            if (t == "go back" || t == "go back one page" || t == "go one page back"
-              )
-            {
-                SendKeys.SendWait("%{LEFT}"); return true;
-            } if (t == "go forward" || t == "go forward one page" || t == "go one page forward" || t == "go forward a page"
-              || t == "go forward again"
-              )
-            {
-                SendKeys.SendWait("%{LEFT}"); return true;
-            }
-
-            if (t == "close tab" || t == "close this tab" ||
-              t == "close gap" || t == "close this gap" || t == "quit this tab"
-              || t == "close current tab" || t == "close the current tab"
-             )
-            {
-                SendKeys.SendWait("^w"); return true;
-            }
-            if (t == "show history"
-             )
-            {
-                SendKeys.SendWait("^h"); //SendKeys.SendWait("%c");
-                SendKeys.SendWait("^y"); return true;
-            }
-
-            string pattern = @"^search (.*?)(| in (|a|the) new (to|tab|ten|gap))$";
-            Match match = Regex.Match(t, pattern);
-            foreach (Group g in match.Groups)
-                Console.WriteLine("|" + g.Value);
-            if (match.Success)
-            {
-                if (match.Groups[2].Value.Length > 0)
-                {
-                    SendKeys.SendWait("^t"); Thread.Sleep(500);
-
-                }
-                else
-                    SendKeys.SendWait("^l");
-                SendKeys.SendWait(match.Groups[1].Value);
-                SendKeys.SendWait("{ENTER}"); return true;
-            }
-
-
-            return false;
-        }
     }
 }

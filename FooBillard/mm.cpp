@@ -10,6 +10,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <gl/GL.h>
+
 using namespace std;
 
 bool allowDebug = 1;
@@ -125,6 +126,9 @@ int cx = 0, cy = 0, cw = 300, ch = 100;
 double ballrad = 150;
 #include <string>
 std::string lastRecognized, lastAction;
+std::vector<std::string> commands;
+bool showHelp;
+
 extern "C" {
 
 	void mm_draw_2d() {
@@ -133,8 +137,23 @@ extern "C" {
 		cy = win_height / 4 - ch / 2;
 
 		draw_text(10,10,"",40); //doesn't draw the circle around the balls otherwise
-		draw_text(20, 100, ("You said: " + lastRecognized).c_str(), 40);
-		draw_text(20, 120, ("Last voice action: " + lastAction).c_str(), 40);
+		draw_text(20, 50, ("You said: " + lastRecognized).c_str(), 40);
+		draw_text(20, 90, ("Last voice action: " + lastAction).c_str(), 40);
+
+		std::vector<std::string> helpList = std::vector<std::string>(commands);
+		helpList.insert(helpList.begin(), "---COMMANDS---");
+		
+		if (showHelp){
+			
+			int n = 0;
+			for (int i = 0; i < helpList.size(); i++){
+				if (helpList.at(i) == "hit" || helpList.at(i) == "push" || helpList.at(i) == "what can I say" || helpList.at(i) == "help")
+					n++;
+				else
+					draw_text(20, 130 + (i - n) * 30, helpList.at(i).c_str(), 20);
+			}
+		}
+
 		if (touchmode)
 		if (placing_cue_ball) {
 			draw_text(cx + cw / 2 - 60, cy + ch - 10, "Put here!", 40);

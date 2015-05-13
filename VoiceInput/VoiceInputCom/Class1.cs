@@ -24,9 +24,9 @@ namespace VoiceInputCom
             return 6;
         }
 
-        public void init()
+        public void init(bool useLimitedDictionary)
         {
-            Program.Main(null);
+            Program.startRecogThread(useLimitedDictionary);
         }
 
         public bool wordRecognized()
@@ -44,9 +44,9 @@ namespace VoiceInputCom
             return Program.getRecongizedCommads();
         }
 
-        public string getLastInvalidCommand()
+        public string getLastSpokenPhrase()
         {
-            return Program.getLastInvalidCommand();
+            return Program.getLastSpokenPhrase();
         }
 
     }
@@ -60,7 +60,7 @@ namespace VoiceInputCom
         int give5();
         
         [DispId(2)]
-        void init();
+        void init(bool useLimitedDictionary);
 
         [DispId(3)]
         bool wordRecognized();
@@ -72,7 +72,7 @@ namespace VoiceInputCom
         String[] getRecognizedCommands();
 
         [DispId(6)]
-        String getLastInvalidCommand();
+        String getLastSpokenPhrase();
     }
     /*
     [Guid("869BA8A7-6F3F-455D-9FB2-4D0C239AAEA2"),

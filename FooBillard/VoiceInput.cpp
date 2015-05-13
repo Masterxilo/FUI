@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "VoiceInput.h"
 
 #import <VoiceInputCom.tlb>
@@ -5,12 +6,17 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+//#include <menu.h>
 //#include <sys_stuff.h>
 
 extern "C" {
 	void birdview();
 	void shoot(int ani);
 	void Key(int key, int modifiers);
+	int menu_on;
+	//extern menuType;
+	//struct menu_struct;
+	//menu_struct g_act_menu;
 }
 
 enum {
@@ -53,10 +59,10 @@ extern "C" {
 		CoInitialize(NULL);
 		VoiceInputCom::IVoiceInputComObjectPtr p(__uuidof(VoiceInputCom::VoiceInputComObject));
 
-		//bool val = p->wordRecognized();
-		std::thread t(&VoiceInputCom::IVoiceInputComObject::init, p);
-		t.detach();
-
+		std::thread{ &VoiceInputCom::IVoiceInputComObject::init, p, true }.detach();
+		Sleep(5000);
+		std::thread{&VoiceInputCom::IVoiceInputComObject::init, p, false}.detach();
+		
 		std::thread fetchT(fetchThread);
 		fetchT.detach();
 		//std::string a = p->hey();
@@ -65,81 +71,133 @@ extern "C" {
 
 
 extern std::string lastRecognized, lastAction;
-
+extern std::vector<std::string> commands;
+extern bool showHelp;
+//g_act_menu != 0
 void fetchThread(){
 	CoInitialize(NULL);
 	VoiceInputCom::IVoiceInputComObjectPtr p(__uuidof(VoiceInputCom::VoiceInputComObject));
 	std::set<std::string> commandList;
 	//list has to be equal to command list in c# Program.cs
 	
-
-	std::vector<std::string> commands;
 	commands.push_back("shoot");
-	//commands.push_back("children");
+	commands.push_back("hit");
+	commands.push_back("push");
 	//commands.push_back("should");
 	
+	commands.push_back("stronger");
+	commands.push_back("much stronger");
+	commands.push_back("weaker");
+	commands.push_back("much weaker");
+
 	commands.push_back("que");
-	commands.push_back("Q.");//cue
+	//commands.push_back("Q.");//cue
+
 	commands.push_back("birdview");
 	commands.push_back("menu");
 	commands.push_back("down");
 	commands.push_back("up");
 	commands.push_back("select");
-	
+
+	commands.push_back("commands");
+	commands.push_back("help");
+	commands.push_back("what can I say");
+
+	time_t t;
 
 	while (true){
-		std::string unrecognized = p->getLastInvalidCommand();
-		if ((!unrecognized.empty()) && !(std::find(commands.begin(), commands.end(), unrecognized) != commands.end())){
-			printf("Unrecognized command: %s", unrecognized.c_str());
+		time(&t);
+		char* timeStr = ctime(&t);
+		int timeLen = strlen(timeStr);
+
+		std::string unrecognized = p->getLastSpokenPhrase();
+		//if ((!unrecognyized.empty()) && !(std::find(commands.begin(), commands.end(), unrecognized) != commands.end())){
+		if ((!unrecognized.empty())){
+			printf("%.*s>>>Last Voice Input: %s \n", timeLen-1, timeStr, unrecognized.c_str());
 			lastRecognized = unrecognized;
 		}
 
 
 		std::string input=p->getLastCommand();
 		if (!input.empty()){
-			//if (!(p->getRecognizedCommands()[0]=="shoot"))
-				//int a =5;
-			//if (input == "shoot" || input == "children" || input == "should"){
-			if (input == "shoot"){
-				printf("HeyheyHey");
+			if (input == "shoot" || input == "hit" || input == "push"){
+				printf("%.*s>>>Command: shoot (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "Shooting!";
 				shoot(0);
 				//birdview();
 			}
-			else if (input.compare("que") == 0 || input.compare("Q.") == 0){
-				printf("ready now");
+			else if (input=="que"){
+				printf("%.*s>>>Command: que (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "que!";
 				Key(KSYM_F3,0);
 
 			}
-			else if (input.compare("birdview") == 0){
-				printf("ready now");
+			else if (input=="birdview"){
+				printf("%.*s>>>Command: birdview (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "bird!";
 				Key(KSYM_F2, 0);
 
 			}
-			else if (input.compare("menu") == 0){
-				printf("ready now");
+			else if (input=="menu"){
+				printf("%.*s>>>Command: menu (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "menu!";
 				Key(27, 0); // esc
 			}
 
-			else if (input.compare("down") == 0){
-				printf("ready now");
+			else if (input=="down"){
+				printf("%.*s>>>Command: down (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "down!";
 				Key(KSYM_DOWN, 0);
 			}
 
-			else if (input.compare("up") == 0){
-				printf("ready now");
+			else if (input == "weaker"){
+				printf("%.*s>>>Command: weaker (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "weaker!";
+				for (int i = 0; i < 4; i++){
+					Key(KSYM_DOWN, 0);
+				}
+			}
+
+			else if (input == "much weaker"){
+				printf("%.*s>>>Command: much weaker (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "much weaker!";
+				for (int i = 0; i < 9; i++){
+					Key(KSYM_DOWN, 0);
+				}
+			}
+
+			else if (input == "up"){
+				printf("%.*s>>>Command: up (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "up!";
 				Key(KSYM_UP, 0);
 			}
 
-			else if (input.compare("select") == 0){
-				printf("ready now");
+			else if (input == "stronger"){
+				printf("%.*s>>>Command: stronger (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "stronger!";
+				for (int i = 0; i < 4; i++){
+					Key(KSYM_UP, 0);
+				}
+			}
+
+			else if (input == "much stronger"){
+				printf("%.*s>>>Command: much stronger (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "much stronger!";
+				for (int i = 0; i < 9; i++){
+					Key(KSYM_UP, 0);
+				}
+			}
+
+			else if (input=="select"){
+				printf("%.*s>>>Command: select (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "select!";
 				Key(13, 0);
+			}
+
+			else if (input == "commands" || input == "help" || input == "what can I say"){
+				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "commands!";
+				showHelp = !showHelp;
 			}
 
 			Sleep(2000);

@@ -285,6 +285,7 @@ static menuType  * g_main_menu;
 static menuType  * g_options_menu;
 static int menu_on = 0;
 
+
 int   g_shot_due = 1;  /* a shot to be due at the beginning */
 float g_motion_ratio = 1.0;  /* a shot to be due at the beginning */
 
