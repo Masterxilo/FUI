@@ -17,9 +17,8 @@ bool allowDebug = 1;
 
 // External access
 extern "C" {
-    int wantFullscreen = true;
-
-	int touchmode = 1;
+    int wantFullscreen = 1;
+	int touchmode = 0;
 
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
@@ -27,7 +26,6 @@ extern "C" {
 
 	void draw_rect(int x, int y, int w, int h);
 
-	void draw_text(int x, int y, const char* s, int height);
 	extern int queue_view;
 	void
 		toggle_queue_view();
@@ -76,6 +74,34 @@ extern "C" {
 	void Key(int key, int modifiers);
 
 	extern int MouseEventEnabled;
+
+#include "textobj.h"
+#include "options.h"
+}
+
+#include <map>
+using namespace std;
+map<string, textObj*> texts;
+void draw_text(int x, int y, const char* s, int height) {
+    // === custom text
+    textObj* text;
+    string str = s;
+    auto it = texts.find(str);
+    if (it == texts.end())
+        text = texts[str] = textObj_new((char*)s, options_ball_fontname, height);
+    else
+        text = it->second;
+
+    glPushMatrix();
+    // Screen goes from -1 to 1 in both directions, (0,0) is the center of the screen
+    glTranslatef(x, y, 0);
+    glScalef(1, -1, 0); // invert because the screen is upside down
+    textObj_draw(text);
+
+    glLoadIdentity();
+
+    glPopMatrix();
+    //textObj_delete(text);
 }
 
 void shoot_now(double strengthIn01) {
@@ -131,18 +157,18 @@ std::vector<std::string> commands;
 bool showHelp;
 
 extern "C" {
-
+    extern double dpiScale;
 	void mm_draw_2d() {
-		cw = 400, ch = 60;
-		cx = win_width / 2 - cw / 2;
-		cy = win_height / 4 - ch / 2;
 
-		draw_text(10,10,"",40); //doesn't draw the circle around the balls otherwise
-		draw_text(20, 50, ("You said: " + lastRecognized).c_str(), 40);
-		draw_text(20, 90, ("Last voice action: " + lastAction).c_str(), 40);
+        draw_text(0,0, "", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
+
+
+        draw_text(win_width - 200 * dpiScale, 50 * dpiScale, "Say 'help'!", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
+        draw_text(20 * dpiScale, 50 * dpiScale, ("You said: " + lastRecognized).c_str(), 40 * dpiScale);
+        draw_text(20 * dpiScale, 90 * dpiScale, ("Last voice action: " + lastAction).c_str(), 40 * dpiScale);
 
 		std::vector<std::string> helpList = std::vector<std::string>(commands);
-		helpList.insert(helpList.begin(), "---COMMANDS---");
+		helpList.insert(helpList.begin(), "Available commands:");
 		
 		if (showHelp){
 			
@@ -151,13 +177,23 @@ extern "C" {
 				if (helpList.at(i) == "hit" || helpList.at(i) == "push" || helpList.at(i) == "what can I say" || helpList.at(i) == "help")
 					n++;
 				else
-					draw_text(20, 130 + (i - n) * 30, helpList.at(i).c_str(), 20);
+                    draw_text(20 * dpiScale, (130 + (i - n) * 30)* dpiScale, helpList.at(i).c_str(), 20 * dpiScale);
 			}
 		}
 
+        // Ball radius
+        ballrad = 70 * dpiScale;
+        // confirm button
+        cw = 400 * dpiScale, ch = 60 * dpiScale;
+        cx = win_width / 2 - cw / 2;
+        cy = win_height / 4 - ch / 2;
+
 		if (touchmode)
 		if (placing_cue_ball) {
-			draw_text(cx + cw / 2 - 60, cy + ch - 10, "Put here!", 40);
+            draw_text(
+                cx + cw * 0.3,
+                cy + ch - 10 * dpiScale,
+                "Put here!", 40 * dpiScale);
 
 			draw_rect(cx, cy, cw, ch);
 		}
@@ -255,6 +291,7 @@ POINT p1_; // old p1
 // Called when the touchpoints moved but still have the same ids (fingers)
 // as they did when the config was last changed
 void move(POINT* p1, POINT* p2) {
+    if (!touchmode) return;
 	POINT p1d;
 	if (p1) {
 		p1d.x = p1->x - p1_.x; p1d.y = p1->y - p1_.y;
@@ -300,6 +337,7 @@ void move(POINT* p1, POINT* p2) {
 }
 
 void inputConfigChanges(POINT* p1, POINT* p2) {
+    if (!touchmode) return;
 	MouseEventEnabled = 1;
 	dprintf("input config changes\n");
 	if (p1) {

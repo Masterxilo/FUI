@@ -106,15 +106,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
+    <IncludePath>..\VoiceInput\VoiceInputCom\bin\Debug;dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\VoiceInput\VoiceInputCom\bin\Debug;dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\VoiceInput\VoiceInputCom\bin\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <CompileAsManaged>
       </CompileAsManaged>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -140,6 +144,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

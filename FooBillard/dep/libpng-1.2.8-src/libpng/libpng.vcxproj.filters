@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien\zlib">
+      <UniqueIdentifier>{4502dfb3-2e64-4b13-9a3f-e181acbcd182}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\pngwtran.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngwutil.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\example.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngerror.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pnggccrd.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngget.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngmem.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngpread.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngread.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngrio.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngrtran.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngrutil.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngset.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngtest.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngtrans.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngvcrd.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngwio.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pngwrite.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\crc32.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\deflate.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\example.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\gzio.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\infback.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\inffast.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\inflate.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\inftrees.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\minigzip.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\trees.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\uncompr.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\zutil.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\adler32.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zlib\compress.c">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\png.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pngconf.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\crc32.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\deflate.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\inffast.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\inffixed.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\inflate.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\inftrees.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\trees.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\zconf.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\zconf.in.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\zlib.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\zutil.h">
+      <Filter>Quelldateien\zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -26,6 +26,7 @@
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
+double dpiScale = 1;
 extern  int wantFullscreen;
 #if defined(__WIN32__) || defined(WIN32)
 /* replaces missing endian.h on Win32 */
@@ -2934,24 +2935,14 @@ void Display_tournament_tree(struct TournamentState_ * ts)
 }
 
 
-void draw_text(int x, int y, const char* s, int height) {
-	// === custom text
-	textObj* text = textObj_new(s, options_ball_fontname, height);
-	glPushMatrix();
-
-	// Screen goes from -1 to 1 in both directions, (0,0) is the center of the screen
-	glTranslatef(x, y, 0);
-	glScalef(1, -1, 0); // invert because the screen is upside down
-	textObj_draw(text);
-
-	glPopMatrix();
-	textObj_delete(text);
-}
 
 void draw_rect(int x, int y, int w, int h)
 {
+    glBindTexture(GL_TEXTURE_2D, 0);
 	glPushMatrix();  //Make sure our transformations don't affect any other transformations in other code
-	glTranslatef(x, y, 0);  //Translate rectangle to its assigned x and y position
+
+    glLoadIdentity();
+    glTranslatef(x, y, 0);  //Translate rectangle to its assigned x and y position
 	//Put other transformations here
 	glBegin(GL_LINE_LOOP);   //We want to draw a quad, i.e. shape with four sides
 	glVertex2f(0, 0);            //Draw the four corners of the rectangle
@@ -2964,6 +2955,7 @@ void draw_rect(int x, int y, int w, int h)
 
 void draw_circle(float x, float y, float radius)
 {
+    glBindTexture(GL_TEXTURE_2D,0);
 	glPushMatrix();  //Make sure our transformations don't affect any other transformations in other code
 	glTranslatef(x, y, 0);  //Translate rectangle to its assigned x and y position
 
@@ -5356,12 +5348,25 @@ int main(int argc, char *argv[])
   DPRINTF("main:rgstereo=%d", options_rgstereo_on);
   
   // ==
-  SetProcessDPIAware();
+  //
+  SetProcessDPIAware(); //true
+  HDC screen = GetDC(NULL);
+  double hPixelsPerInch = GetDeviceCaps(screen, LOGPIXELSX);
+  double vPixelsPerInch = GetDeviceCaps(screen, LOGPIXELSY);
+  ReleaseDC(NULL, screen);
+  dpiScale =
+      (hPixelsPerInch + vPixelsPerInch) * 0.5 / 96;
+  //
   if (wantFullscreen) {
       fullscreen = 1;
       win_width = GetSystemMetrics(SM_CXSCREEN);
       win_height = GetSystemMetrics(SM_CYSCREEN);
       ;
+  }
+  else {
+      win_width = 1024;
+      win_height = 768;
+      fullscreen = 0;
   }
   
   /* command line options */

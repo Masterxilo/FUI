@@ -153,7 +153,7 @@ void fetchThread(){
 			else if (input == "weaker"){
 				printf("%.*s>>>Command: weaker (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "weaker!";
-				for (int i = 0; i < 4; i++){
+				for (int i = 0; i < 4*2; i++){
 					Key(KSYM_DOWN, 0);
 				}
 			}
@@ -161,7 +161,7 @@ void fetchThread(){
 			else if (input == "much weaker"){
 				printf("%.*s>>>Command: much weaker (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "much weaker!";
-				for (int i = 0; i < 9; i++){
+				for (int i = 0; i < 9*3; i++){
 					Key(KSYM_DOWN, 0);
 				}
 			}
@@ -175,7 +175,7 @@ void fetchThread(){
 			else if (input == "stronger"){
 				printf("%.*s>>>Command: stronger (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "stronger!";
-				for (int i = 0; i < 4; i++){
+                for (int i = 0; i < 4 * 2; i++){
 					Key(KSYM_UP, 0);
 				}
 			}
@@ -183,7 +183,7 @@ void fetchThread(){
 			else if (input == "much stronger"){
 				printf("%.*s>>>Command: much stronger (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "much stronger!";
-				for (int i = 0; i < 9; i++){
+				for (int i = 0; i < 9*3; i++){
 					Key(KSYM_UP, 0);
 				}
 			}

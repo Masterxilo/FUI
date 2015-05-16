@@ -1,0 +1,36 @@
+***************
+*** 80,93 ****
+  PNGMAJ = 0
+  CYGDLL = 12
+  PNGMIN = 1.2.7
+  PNGVER = $(PNGMAJ).$(PNGMIN)
+  
+- SHAREDLIB=cygpng$(CYGDLL).dll
+  STATLIB=libpng.a
+  IMPLIB=libpng.dll.a
+  SHAREDDEF=libpng.def
+  LIBS=$(SHAREDLIB) $(STATLIB)
+  EXE=.exe
+  
+  LDFLAGS=$(strip -L. $(MINGW_LDFLAGS) -lpng $(addprefix -L,$(ZLIBLIB)) -lz)
+  LDSFLAGS=$(strip -shared -L.  $(MINGW_LDFLAGS) -Wl,--export-all)
+--- 84,102 ----
+  PNGMAJ = 0
+  CYGDLL = 12
+  PNGMIN = 1.2.7
++ MAJOR=$(shell echo $(PNGMIN) | sed -e "s/\\..*$$//")
++ MINOR=$(shell echo $(PNGMIN) | sed -e "s/^[^\\.]*\\.0*\\([^.]*\\).*$$/\\1/")
+  PNGVER = $(PNGMAJ).$(PNGMIN)
+  
++ SHAREDLIB=libpng$(CYGDLL).dll
+  STATLIB=libpng.a
+  IMPLIB=libpng.dll.a
+  SHAREDDEF=libpng.def
+  LIBS=$(SHAREDLIB) $(STATLIB)
+  EXE=.exe
++ SHAREDRC=libpng-dll.rc
++ SHAREDRCO=libpng-dll-rc.o
++ O2DLL=o2dll
+  
+  LDFLAGS=$(strip -L. $(MINGW_LDFLAGS) -lpng $(addprefix -L,$(ZLIBLIB)) -lz)
+  LDSFLAGS=$(strip -shared -L.  $(MINGW_LDFLAGS) -Wl,--export-all)
