@@ -17,6 +17,7 @@ bool allowDebug = 1;
 
 // External access
 extern "C" {
+    int wantFullscreen = true;
 
 	int touchmode = 1;
 

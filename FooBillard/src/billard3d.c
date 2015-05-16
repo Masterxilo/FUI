@@ -26,7 +26,7 @@
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
-
+extern  int wantFullscreen;
 #if defined(__WIN32__) || defined(WIN32)
 /* replaces missing endian.h on Win32 */
 #define	__LITTLE_ENDIAN	1234
@@ -5354,6 +5354,16 @@ int main(int argc, char *argv[])
     process_option(act_option);
   }
   DPRINTF("main:rgstereo=%d", options_rgstereo_on);
+  
+  // ==
+  SetProcessDPIAware();
+  if (wantFullscreen) {
+      fullscreen = 1;
+      win_width = GetSystemMetrics(SM_CXSCREEN);
+      win_height = GetSystemMetrics(SM_CYSCREEN);
+      ;
+  }
+  
   /* command line options */
   /*   while( ( act_option = getopt_long_only(argc, argv, "+", long_options, &option_index) ) >= 0){
          process_option(act_option);
