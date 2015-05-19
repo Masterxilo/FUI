@@ -107,10 +107,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>..\VoiceInput\VoiceInputCom\bin\Debug;dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>..\VoiceInput\VoiceInputCom\bin\Debug;dependencies\freetype\freetype2;dependencies\sys;dependencies\zlib;dependencies\sdl;dependencies;dependencies\freetype;dependencies\libpng;src;.;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
