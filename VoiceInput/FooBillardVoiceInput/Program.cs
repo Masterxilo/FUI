@@ -64,7 +64,9 @@ namespace FooBillardVoiceInput
                                                     "up", 
                                                     "down",
 
-                                                    "commands", "help", "what can I say"};
+                                                    "commands", "help", "what can I say",
+                
+                "put here"};
 
                 if (useLimitedDictionary)
                 {

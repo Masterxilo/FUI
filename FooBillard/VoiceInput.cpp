@@ -101,7 +101,9 @@ void fetchThread(){
 
 	commands.push_back("commands");
 	commands.push_back("help");
-	commands.push_back("what can I say");
+    commands.push_back("what can I say");
+
+    commands.push_back("put here");
 
 	time_t t;
 
@@ -137,7 +139,12 @@ void fetchThread(){
 				lastAction = "bird!";
 				Key(KSYM_F2, 0);
 
-			}
+            }
+            else if (input == "put here"){
+                printf("%.*s>>>Command: put here (%s) \n", timeLen - 1, timeStr, input.c_str());
+                lastAction = "put here!";
+                // 
+            }
 			else if (input=="menu"){
 				printf("%.*s>>>Command: menu (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "menu!";

@@ -231,7 +231,7 @@ static GLuint fblogotexbind;
 
 static int  show_fps = 0;
 
-static int  helpscreen_on = 0;
+int  helpscreen_on = 0;
 
 /* cubemap reflection stuff */
 //#define MAX_BALLS 22
@@ -285,6 +285,48 @@ static menuType  * g_act_menu;
 static menuType  * g_main_menu;
 static menuType  * g_options_menu;
 static int menu_on = 0;
+
+
+const char* modifierToStr(int m) {
+    if (m & KEY_MODIFIER_SHIFT &&
+        m & KEY_MODIFIER_CTRL &&
+        m & KEY_MODIFIER_ALT
+        ) {
+        return "shift+ctrl+alt";
+    }
+    // 2
+    if (m & KEY_MODIFIER_SHIFT &&
+        m & KEY_MODIFIER_CTRL
+        ) {
+        return "shift+ctrl";
+    }
+    if (m & KEY_MODIFIER_SHIFT &&
+        m & KEY_MODIFIER_ALT
+        ) {
+        return "shift+alt";
+    }
+    if (
+        m & KEY_MODIFIER_CTRL &&
+        m & KEY_MODIFIER_ALT
+        ) {
+        return "ctrl+alt";
+    }
+    // 1
+    if (m & KEY_MODIFIER_ALT
+        ) {
+        return "alt";
+    }
+    if (m & KEY_MODIFIER_SHIFT
+        ) {
+        return "shift";
+    }
+    if (
+        m & KEY_MODIFIER_CTRL
+        ) {
+        return "ctrl";
+    }
+    return "";
+}
 
 
 int   g_shot_due = 1;  /* a shot to be due at the beginning */
@@ -2031,6 +2073,8 @@ double strength01(double value)
 
 // ==
 int MouseEventEnabled = 0;
+void logMouse(const char* str);
+
 // == 
 void
 MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int key_modifiers)
@@ -2040,7 +2084,11 @@ MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int ke
     if (!MouseEventEnabled) return;
     // ==
 
-  //    key_modifiers=glutGetModifiers();
+    if (MOUSE_DOWN) {
+        char s[1000];
+        sprintf(s, "button: %i", (int)button);
+        logMouse(s);
+    }
 
   if (g_act_menu != 0) {
 
@@ -3937,9 +3985,14 @@ void control_toggle(int * control_param)
   }
 }
 
+void logKey(const char* str);
 
 void Key(int key, int modifiers)
 {
+    char s[1000];
+    sprintf(s, "key: %i, modifiers: %s", key, modifierToStr(modifiers));
+    logKey(s);
+
   float step = 3.0;
 
   if (g_act_menu != (menuType *)0){

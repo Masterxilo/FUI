@@ -10,10 +10,32 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <gl/GL.h>
-
+#include <time.h>
 using namespace std;
 
-bool allowDebug = 1;
+bool allowDebug = 0;
+
+
+void log(const char* what, const char* str) {
+    time_t t;
+    time(&t);
+    char* timeStr = ctime(&t);
+    int timeLen = strlen(timeStr);
+    printf("%.*s>>>Last %s Input: %s \n", timeLen - 1, timeStr, what, str);
+}
+
+extern "C" {
+    void logTouch(const char* str) {
+        log("Touch", str);
+    }
+    void logKey(const char* str) {
+        log("Key", str);
+    }
+    void logMouse(const char* str) {
+        log("Mouse", str);
+    }
+
+}
 
 // External access
 extern "C" {
@@ -156,21 +178,28 @@ std::string lastRecognized, lastAction;
 std::vector<std::string> commands;
 bool showHelp;
 
+const char* LogFileName = "log.log";
+FILE* LogFile;
+
 extern "C" {
+    extern int helpscreen_on;
     extern double dpiScale;
 	void mm_draw_2d() {
 
         draw_text(0,0, "", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
 
+        draw_text(win_width - 240 * dpiScale, 50 * dpiScale, "Say 'commands'!", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
 
-        draw_text(win_width - 200 * dpiScale, 50 * dpiScale, "Say 'help'!", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
-        draw_text(20 * dpiScale, 50 * dpiScale, ("You said: " + lastRecognized).c_str(), 40 * dpiScale);
-        draw_text(20 * dpiScale, 90 * dpiScale, ("Last voice action: " + lastAction).c_str(), 40 * dpiScale);
-
+        if (!helpscreen_on){
+            draw_text(20 * dpiScale, 50 * dpiScale, ("You said: " + lastRecognized).c_str(), 40 * dpiScale);
+            draw_text(20 * dpiScale, 90 * dpiScale, ("Last voice action: " + lastAction).c_str(), 40 * dpiScale);
+        }
 		std::vector<std::string> helpList = std::vector<std::string>(commands);
 		helpList.insert(helpList.begin(), "Available commands:");
 		
-		if (showHelp){
+        if (showHelp 
+            && !helpscreen_on // do not show on top of game menu
+            ){
 			
 			int n = 0;
 			for (int i = 0; i < helpList.size(); i++){
@@ -355,7 +384,7 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 		state = Cz; // Two fingers is zooming
 
 		MouseEventEnabled = 0;
-		dprintf("zoom possible\n");
+        logTouch("zoom possible");
 		return;
 	}
 
@@ -370,6 +399,8 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 			player_placing_cue_ball = 0;
 			//            placing_cue_ball = 0;
 		}
+
+        logTouch("confirmed ball placement");
 		return;
 	}
 
@@ -380,17 +411,17 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 
 		if (queue_view) Key('c', 0); // enable queue view
 		if (!options_free_view_on) Key('f', 0);
-		dprintf("ballmove possible\n");
+        logTouch("ballmove possible");
 		return;
 	}
 
 	if (inAs(p1)) {
 		MouseEventEnabled = 0;
 		state = As;
-		dprintf("swipe possible\n");
+        logTouch("swipe possible");
 		return;
 	}
-	dprintf("camera move possible\n");
+    logTouch("camera move possible");
 	state = Cm;
 }
 
@@ -423,7 +454,7 @@ void mm_swipe(double xfrom, double yfrom,
 		xfrom, yfrom, xto, yto, angle, length, timeInMs);
 
 	if (state == As){
-		dprintf("swiped from swipe area\n");
+        logTouch("swiped from swipe area");
 		if (angle < 0) { // upwards
 			double s = (length - swipeThreasholdDistanceInPixels);
 			s /= timeInMs;
@@ -461,7 +492,7 @@ void mm_gesture(  /* [in] */ FLOAT x,
 	/* [in] */ FLOAT cumulativeRotation) {
 
 	if (state == Cz) {
-		dprintf("zooming\n");
+		logTouch("zooming");
 		cam_dist_aim = old_cam_dist_aim * (1.0 / cumulativeScale);
 	}
 	//Xrot = old_Xrot + cumulativeRotation; // up down
@@ -533,6 +564,7 @@ extern "C" {
 
 		if (!touchmode)
 			MouseEventEnabled = 1;
+
 	}
 
 }
