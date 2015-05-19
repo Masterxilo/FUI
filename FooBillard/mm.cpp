@@ -13,8 +13,27 @@
 #include <time.h>
 using namespace std;
 
-bool allowDebug = 0;
 
+bool putHereDesired = false;
+
+static char tempstr[1000];
+extern "C" {
+#include "sys_stuff.h"
+    char* keyToString(int key) {
+        if (key == KSYM_UP)
+            return "up";
+        if (key == KSYM_DOWN)
+            return "down";
+        if (key == KSYM_LEFT)
+            return "left";
+        if (key == KSYM_RIGHT)
+            return "right";
+        if (key == KSYM_F1)
+            return "f1";
+        sprintf(tempstr, "%i", key);
+        return tempstr;
+    }
+}
 
 void log(const char* what, const char* str) {
     time_t t;
@@ -37,10 +56,12 @@ extern "C" {
 
 }
 
+
+bool allowDebug = 0;
 // External access
 extern "C" {
     int wantFullscreen = 1;
-	int touchmode = 0;
+    int touchmode = 1;
 
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
@@ -181,11 +202,31 @@ bool showHelp;
 const char* LogFileName = "log.log";
 FILE* LogFile;
 
+void putHere() {
+
+    MouseEventEnabled = 0;
+    // disable ball move
+    if (placing_cue_ball) {
+        if (!queue_view) Key('c', 0); // disable queue view
+        if (options_free_view_on) Key('f', 0); // disable free view
+
+        // Xrot_offs = Zrot_offs = 0.0; // too jumpy
+        player_placing_cue_ball = 0;
+        //            placing_cue_ball = 0;
+    }
+
+}
 extern "C" {
     extern int helpscreen_on;
     extern double dpiScale;
 	void mm_draw_2d() {
+        // Processing
+        if (putHereDesired) {
+            putHereDesired = false;
+            putHere();
+        }
 
+        // Drawing
         draw_text(0,0, "", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
 
         draw_text(win_width - 240 * dpiScale, 50 * dpiScale, "Say 'commands'!", 40 * dpiScale); //doesn't draw the circle around the balls otherwise
@@ -389,17 +430,7 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 	}
 
 	if (inConfirmRegion(p1)) {
-		MouseEventEnabled = 0;
-		// disable ball move
-		if (placing_cue_ball) {
-			if (!queue_view) Key('c', 0); // disable queue view
-			if (options_free_view_on) Key('f', 0); // disable free view
-
-			// Xrot_offs = Zrot_offs = 0.0; // too jumpy
-			player_placing_cue_ball = 0;
-			//            placing_cue_ball = 0;
-		}
-
+        putHere();
         logTouch("confirmed ball placement");
 		return;
 	}

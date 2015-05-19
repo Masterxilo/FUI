@@ -25,3 +25,9 @@ C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI2\FUI\VoiceInput\FooBi
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI2\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\VoiceInputCom.dll
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI2\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\VoiceInputCom.pdb
 C:\Users\Dominic\Documents\Visual Studio 2013\Projects\FUI2\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.csprojResolveAssemblyReference.cache
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe.config
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.exe
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\bin\Debug\FooBillardVoiceInput.pdb
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.csprojResolveAssemblyReference.cache
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.exe
+C:\Users\Paul'Masterxilo'\Desktop\Future User Interfaces\FUI\VoiceInput\FooBillardVoiceInput\obj\Debug\FooBillardVoiceInput.pdb

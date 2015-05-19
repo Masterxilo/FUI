@@ -2170,7 +2170,7 @@ MouseEvent(MouseButtonEnum button, MouseButtonState  state, int x, int y, int ke
 void
 ball_displace_clip(VMvect * cue_pos, VMvect offs)
 {
-    printf("ball_displace_clip %f %f %f\n", offs.x, offs.y, offs.z);
+    dprintf("ball_displace_clip %f %f %f\n", offs.x, offs.y, offs.z);
 
   VMvect newpos;
 
@@ -3987,10 +3987,12 @@ void control_toggle(int * control_param)
 
 void logKey(const char* str);
 
+char* keyToString(int key);
+
 void Key(int key, int modifiers)
 {
     char s[1000];
-    sprintf(s, "key: %i, modifiers: %s", key, modifierToStr(modifiers));
+    sprintf(s, "key: %s, modifiers: %s", keyToString(key), modifierToStr(modifiers));
     logKey(s);
 
   float step = 3.0;

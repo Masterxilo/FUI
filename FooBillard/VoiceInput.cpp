@@ -60,7 +60,7 @@ extern "C" {
 		VoiceInputCom::IVoiceInputComObjectPtr p(__uuidof(VoiceInputCom::VoiceInputComObject));
 
 		std::thread{ &VoiceInputCom::IVoiceInputComObject::init, p, true }.detach();
-		Sleep(5000);
+		Sleep(100);
 		std::thread{&VoiceInputCom::IVoiceInputComObject::init, p, false}.detach();
 		
 		std::thread fetchT(fetchThread);
@@ -72,7 +72,7 @@ extern "C" {
 
 extern std::string lastRecognized, lastAction;
 extern std::vector<std::string> commands;
-extern bool showHelp;
+extern bool showHelp, putHereDesired;
 //g_act_menu != 0
 void fetchThread(){
 	CoInitialize(NULL);
@@ -143,7 +143,7 @@ void fetchThread(){
             else if (input == "put here"){
                 printf("%.*s>>>Command: put here (%s) \n", timeLen - 1, timeStr, input.c_str());
                 lastAction = "put here!";
-                // 
+                putHereDesired = true;
             }
 			else if (input=="menu"){
 				printf("%.*s>>>Command: menu (%s) \n", timeLen - 1, timeStr, input.c_str());
@@ -205,6 +205,7 @@ void fetchThread(){
 				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "commands!";
 				showHelp = !showHelp;
+
 			}
 
 			Sleep(2000);
