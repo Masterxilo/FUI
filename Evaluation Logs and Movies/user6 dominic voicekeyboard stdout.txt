@@ -1,0 +1,658 @@
+the color <0xrrggbb> means one byte for each red, green, blue
+player_copy1
+player_copy2
+player_copy3
+human player 1
+player_copy3.5
+player_copy4
+player_copy1
+player_copy2
+player_copy3
+human player 2
+player_copy3.5
+player_copy4
+Tue May 19 19:59:54 2015>>>Last Voice Input: and 
+Tue May 19 19:59:55 2015>>>Last Key Input: key: right, modifiers:  
+Tue May 19 19:59:56 2015>>>Last Voice Input: OK 
+Tue May 19 19:59:58 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:02 2015>>>Last Voice Input: the only strong teams won four 
+Tue May 19 20:00:03 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:04 2015>>>Command: up (up) 
+Tue May 19 20:00:04 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:07 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:08 2015>>>Last Key Input: key: 32, modifiers:  
+Tue May 19 20:00:09 2015>>>Last Voice Input: much stronger 
+Tue May 19 20:00:13 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:13 2015>>>Last Voice Input: all 
+Tue May 19 20:00:19 2015>>>Last Voice Input: contact some school and younger policy for 
+Tue May 19 20:00:21 2015>>>Last Voice Input: as the wall and 
+Tue May 19 20:00:21 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:22 2015>>>Last Key Input: key: 32, modifiers:  
+Tue May 19 20:00:24 2015>>>Last Voice Input: the golden palm 
+Tue May 19 20:00:25 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:27 2015>>>Command: que (que) 
+Tue May 19 20:00:27 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:00:28 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:29 2015>>>Last Voice Input: but carson was an 
+Tue May 19 20:00:29 2015>>>Command: up (up) 
+Tue May 19 20:00:29 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:30 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:31 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:31 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:31 2015>>>Command: stronger (stronger) 
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:00:34 2015>>>Last Voice Input: a piece of aluminum costs as well, what's the 
+Tue May 19 20:00:39 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:42 2015>>>Command: down (down) 
+Tue May 19 20:00:42 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:00:43 2015>>>Last Key Input: key: 32, modifiers:  
+Tue May 19 20:00:48 2015>>>Last Voice Input: the woman owns and will the absence of ten percent on several industry businesses whose body found just 
+Tue May 19 20:00:49 2015>>>Last Voice Input: moldable 
+Tue May 19 20:00:51 2015>>>Command: menu (menu) 
+Tue May 19 20:00:51 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:00:51 2015>>>Last Key Input: key: 99, modifiers:  
+Tue May 19 20:00:52 2015>>>Last Key Input: key: 99, modifiers:  
+Tue May 19 20:00:53 2015>>>Last Voice Input: almost one million business tends 
+Tue May 19 20:00:53 2015>>>Last Key Input: key: 13, modifiers:  
+Tue May 19 20:00:55 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:56 2015>>>Command: menu (menu) 
+Tue May 19 20:00:56 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:00:57 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:00:57 2015>>>Last Key Input: key: 13, modifiers:  
+Tue May 19 20:00:58 2015>>>Last Voice Input: the Muslims call 
+Tue May 19 20:00:59 2015>>>Command: que (que) 
+Tue May 19 20:00:59 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:01:00 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:01 2015>>>Last Voice Input: Cuban 
+Tue May 19 20:01:04 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:06 2015>>>Last Voice Input: and as they are a lot 
+Tue May 19 20:01:07 2015>>>Last Voice Input: last week and 
+Tue May 19 20:01:09 2015>>>Command: much weaker (much weaker) 
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:09 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Voice Input: much we can 
+Tue May 19 20:01:11 2015>>>Command: much weaker (much weaker) 
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:11 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:13 2015>>>Last Voice Input: much meet you 
+Tue May 19 20:01:14 2015>>>Command: shoot (shoot) 
+Tue May 19 20:01:16 2015>>>Last Voice Input: it 
+Tue May 19 20:01:16 2015>>>Command: up (up) 
+Tue May 19 20:01:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:18 2015>>>Last Voice Input: and all 
+Tue May 19 20:01:18 2015>>>Command: down (down) 
+Tue May 19 20:01:18 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:19 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:20 2015>>>Last Voice Input: and towards 
+Tue May 19 20:01:22 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:22 2015>>>Command: up (up) 
+Tue May 19 20:01:22 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:24 2015>>>Last Voice Input: shoot 
+Tue May 19 20:01:24 2015>>>Command: shoot (shoot) 
+Tue May 19 20:01:26 2015>>>Last Voice Input: a 
+Tue May 19 20:01:26 2015>>>Command: up (up) 
+Tue May 19 20:01:26 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:31 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:33 2015>>>Last Voice Input: once a stone's 
+Tue May 19 20:01:33 2015>>>Command: up (up) 
+Tue May 19 20:01:33 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:36 2015>>>Command: que (que) 
+Tue May 19 20:01:36 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:01:36 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:38 2015>>>Last Voice Input: a 
+Tue May 19 20:01:38 2015>>>Command: up (up) 
+Tue May 19 20:01:38 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:40 2015>>>Last Voice Input: U.N. 
+Tue May 19 20:01:40 2015>>>Command: que (que) 
+Tue May 19 20:01:40 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:01:42 2015>>>Command: que (que) 
+Tue May 19 20:01:42 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:01:44 2015>>>Last Voice Input: Cuban and 
+Tue May 19 20:01:44 2015>>>Command: que (que) 
+Tue May 19 20:01:44 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:01:46 2015>>>Last Voice Input: human 
+Tue May 19 20:01:46 2015>>>Command: shoot (shoot) 
+Tue May 19 20:01:48 2015>>>Last Voice Input: a 
+Tue May 19 20:01:50 2015>>>Last Voice Input: Minnesota 
+Tue May 19 20:01:50 2015>>>Command: shoot (push) 
+Tue May 19 20:01:51 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:52 2015>>>Last Voice Input: if 
+Tue May 19 20:01:54 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:01:55 2015>>>Command: up (up) 
+Tue May 19 20:01:55 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:01:57 2015>>>Command: much weaker (much weaker) 
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:57 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:01:59 2015>>>Last Voice Input: one treated 
+Tue May 19 20:01:59 2015>>>Command: shoot (shoot) 
+Tue May 19 20:02:01 2015>>>Last Voice Input: shoot 
+Tue May 19 20:02:01 2015>>>Command: up (up) 
+Tue May 19 20:02:01 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:03 2015>>>Last Voice Input: and 
+Tue May 19 20:02:03 2015>>>Command: menu (menu) 
+Tue May 19 20:02:03 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:02:06 2015>>>Command: select (select) 
+Tue May 19 20:02:06 2015>>>Last Key Input: key: 13, modifiers:  
+Tue May 19 20:02:07 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:08 2015>>>Last Voice Input: select 
+Tue May 19 20:02:14 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:15 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Voice Input: much stronger 
+Tue May 19 20:02:17 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:19 2015>>>Last Voice Input: shoot 
+Tue May 19 20:02:19 2015>>>Command: shoot (shoot) 
+Tue May 19 20:02:25 2015>>>Command: shoot (shoot) 
+Tue May 19 20:02:28 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:30 2015>>>Last Voice Input: original been a force jurists shooting that will sometimes would throw her 
+Tue May 19 20:02:33 2015>>>Command: stronger (stronger) 
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:34 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:36 2015>>>Last Voice Input: one half teaspoon of ASU's volume was that it 
+Tue May 19 20:02:36 2015>>>Command: que (que) 
+Tue May 19 20:02:36 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:02:36 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:38 2015>>>Command: que (que) 
+Tue May 19 20:02:38 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:02:39 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:40 2015>>>Last Voice Input: true that some of the food section Q. into 
+Tue May 19 20:02:41 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:42 2015>>>Command: up (up) 
+Tue May 19 20:02:42 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Voice Input: much weaker 
+Tue May 19 20:02:44 2015>>>Command: much weaker (much weaker) 
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Command: much weaker (much weaker) 
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:46 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:02:48 2015>>>Last Voice Input: much we can 
+Tue May 19 20:02:48 2015>>>Command: shoot (shoot) 
+Tue May 19 20:02:50 2015>>>Last Voice Input: shoot 
+Tue May 19 20:02:51 2015>>>Command: menu (menu) 
+Tue May 19 20:02:51 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:02:52 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:53 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:53 2015>>>Last Voice Input: and 
+Tue May 19 20:02:53 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:53 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:55 2015>>>Last Voice Input: disposable by 
+Tue May 19 20:02:55 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:02:56 2015>>>Last Voice Input: news of 
+Tue May 19 20:02:59 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:01 2015>>>Last Voice Input: ulysses teaches us 
+Tue May 19 20:03:01 2015>>>Command: shoot (shoot) 
+Tue May 19 20:03:03 2015>>>Last Voice Input: shoot 
+Tue May 19 20:03:03 2015>>>Last Voice Input: while 
+Tue May 19 20:03:04 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:11 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:13 2015>>>Command: shoot (shoot) 
+Tue May 19 20:03:15 2015>>>Last Voice Input: shoot 
+Tue May 19 20:03:15 2015>>>Command: up (up) 
+Tue May 19 20:03:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:17 2015>>>Last Voice Input: all we are 
+Tue May 19 20:03:17 2015>>>Command: up (up) 
+Tue May 19 20:03:17 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:17 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:19 2015>>>Last Voice Input: and 
+Tue May 19 20:03:20 2015>>>Last Voice Input: Wisconsin coach 
+Tue May 19 20:03:21 2015>>>Command: down (down) 
+Tue May 19 20:03:21 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:03:23 2015>>>Last Voice Input: young 
+Tue May 19 20:03:26 2015>>>Last Voice Input: designs logins and Physicians and 
+Tue May 19 20:03:26 2015>>>Command: down (down) 
+Tue May 19 20:03:26 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:03:28 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:28 2015>>>Last Voice Input: when 
+Tue May 19 20:03:31 2015>>>Command: shoot (shoot) 
+Tue May 19 20:03:33 2015>>>Last Voice Input: shoot 
+Tue May 19 20:03:33 2015>>>Last Voice Input: while 
+Tue May 19 20:03:35 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:42 2015>>>Command: down (down) 
+Tue May 19 20:03:42 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:03:44 2015>>>Last Voice Input: mary hardesty and in all kinds are 
+Tue May 19 20:03:44 2015>>>Command: down (down) 
+Tue May 19 20:03:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:03:45 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:46 2015>>>Last Voice Input: in 
+Tue May 19 20:03:46 2015>>>Command: up (up) 
+Tue May 19 20:03:46 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:46 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:47 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:03:49 2015>>>Command: stronger (stronger) 
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:49 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:51 2015>>>Last Voice Input: stronger 
+Tue May 19 20:03:52 2015>>>Command: stronger (stronger) 
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:52 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:03:54 2015>>>Last Voice Input: stillman 
+Tue May 19 20:03:54 2015>>>Command: shoot (shoot) 
+Tue May 19 20:03:56 2015>>>Last Voice Input: shoot 
+Tue May 19 20:03:58 2015>>>Last Voice Input: while she 
+Tue May 19 20:03:58 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:00 2015>>>Last Voice Input: when 
+Tue May 19 20:04:04 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:04 2015>>>Command: up (up) 
+Tue May 19 20:04:04 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:04:06 2015>>>Last Voice Input: shoot 
+Tue May 19 20:04:06 2015>>>Command: shoot (shoot) 
+Tue May 19 20:04:09 2015>>>Last Voice Input: where once 
+Tue May 19 20:04:12 2015>>>Last Voice Input: monica if if 
+Tue May 19 20:04:14 2015>>>Last Voice Input: the hole in 
+Tue May 19 20:04:15 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:17 2015>>>Last Voice Input: and 
+Tue May 19 20:04:21 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:22 2015>>>Command: up (up) 
+Tue May 19 20:04:22 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:04:24 2015>>>Last Voice Input: shoot 
+Tue May 19 20:04:24 2015>>>Command: shoot (shoot) 
+Tue May 19 20:04:27 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:33 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:34 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:35 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:37 2015>>>Command: shoot (shoot) 
+Tue May 19 20:04:39 2015>>>Last Voice Input: shoot 
+Tue May 19 20:04:39 2015>>>Command: down (down) 
+Tue May 19 20:04:39 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:04:40 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:41 2015>>>Last Voice Input: is 
+Tue May 19 20:04:48 2015>>>Last Voice Input: very sensitive 
+Tue May 19 20:04:50 2015>>>Command: menu (menu) 
+Tue May 19 20:04:50 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:04:52 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:52 2015>>>Command: que (que) 
+Tue May 19 20:04:52 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:04:54 2015>>>Last Voice Input: nineteen oh and selena 
+Tue May 19 20:04:54 2015>>>Command: commands (commands) 
+Tue May 19 20:04:55 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:55 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:56 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:57 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:04:57 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:05:00 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:05:01 2015>>>Command: down (down) 
+Tue May 19 20:05:01 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:03 2015>>>Last Voice Input: and another user into baseman old, that the former 
+Tue May 19 20:05:03 2015>>>Command: shoot (shoot) 
+Tue May 19 20:05:05 2015>>>Last Voice Input: shoot 
+Tue May 19 20:05:08 2015>>>Last Voice Input: the news that 
+Tue May 19 20:05:13 2015>>>Command: commands (commands) 
+Tue May 19 20:05:16 2015>>>Command: stronger (stronger) 
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:16 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:19 2015>>>Last Voice Input: open silicon valley house and Congress have only way for little stronger than 
+Tue May 19 20:05:19 2015>>>Command: commands (commands) 
+Tue May 19 20:05:21 2015>>>Command: down (down) 
+Tue May 19 20:05:21 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:24 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:24 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:05:26 2015>>>Command: shoot (push) 
+Tue May 19 20:05:29 2015>>>Last Voice Input: O. the seattle case goes on trial is the fruit for home for travelers close 
+Tue May 19 20:05:37 2015>>>Last Voice Input: the nightmarish if it hasn't really atmosphere and if 
+Tue May 19 20:05:38 2015>>>Command: menu (menu) 
+Tue May 19 20:05:38 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:05:40 2015>>>Last Voice Input: one, 
+Tue May 19 20:05:41 2015>>>Last Voice Input: and your satisfaction 
+Tue May 19 20:05:44 2015>>>Command: weaker (weaker) 
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:44 2015>>>Last Key Input: key: down, modifiers:  
+Tue May 19 20:05:46 2015>>>Last Voice Input: once dreamed 
+Tue May 19 20:05:53 2015>>>Last Voice Input: memo stating the other one prize will lead a bridge too 
+Tue May 19 20:05:55 2015>>>Last Voice Input: mullin needs 
+Tue May 19 20:05:58 2015>>>Last Voice Input: we'll 
+Tue May 19 20:06:04 2015>>>Last Voice Input: we send me up for 
+Tue May 19 20:06:05 2015>>>Last Voice Input: and one 
+Tue May 19 20:06:11 2015>>>Last Voice Input: williams says the hassle rushed 
+Tue May 19 20:06:15 2015>>>Command: much stronger (much stronger) 
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:15 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:18 2015>>>Command: commands (help) 
+Tue May 19 20:06:23 2015>>>Last Voice Input: most of the one with crutches democrats please, just those articles meanwhile the option play once 
+Tue May 19 20:06:26 2015>>>Command: commands (commands) 
+Tue May 19 20:06:32 2015>>>Last Voice Input: what we say the bricks-and wife of the nicest debates and I think he should not a 
+Tue May 19 20:06:33 2015>>>Last Voice Input: contestants 
+Tue May 19 20:06:45 2015>>>Command: up (up) 
+Tue May 19 20:06:45 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:06:47 2015>>>Last Voice Input: yamani wilson and crashes these are all abuse are these experiments was learning to ski: guaranteed rough landing craft for 
+Tue May 19 20:06:48 2015>>>Last Voice Input: one thing on the sloppy box 
+Tue May 19 20:06:53 2015>>>Command: menu (menu) 
+Tue May 19 20:06:53 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:06:55 2015>>>Last Voice Input: is the starting lineup decides to borrow things because you're sisters into a small 
+Tue May 19 20:06:57 2015>>>Last Voice Input: and you are 
+Tue May 19 20:07:09 2015>>>Last Voice Input: and 
+Tue May 19 20:07:11 2015>>>Command: que (que) 
+Tue May 19 20:07:11 2015>>>Last Key Input: key: 265, modifiers:  
+Tue May 19 20:07:17 2015>>>Last Voice Input: all you remove the corrective feedback and it's hard to identify any 
+Tue May 19 20:07:18 2015>>>Command: select (select) 
+Tue May 19 20:07:18 2015>>>Last Key Input: key: 13, modifiers:  
+Tue May 19 20:07:20 2015>>>Command: up (up) 
+Tue May 19 20:07:20 2015>>>Last Key Input: key: up, modifiers:  
+Tue May 19 20:07:22 2015>>>Last Voice Input: the 
+Tue May 19 20:07:26 2015>>>Command: commands (commands) 
+Tue May 19 20:07:27 2015>>>Last Key Input: key: 27, modifiers:  
+Tue May 19 20:07:28 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:07:28 2015>>>Last Mouse Input: button: 1 
+Tue May 19 20:07:29 2015>>>Last Voice Input: clinton is obsessed with my hands of the house action on folsom's 
+Tue May 19 20:07:29 2015>>>Last Mouse Input: button: 1 

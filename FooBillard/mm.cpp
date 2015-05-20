@@ -61,7 +61,7 @@ bool allowDebug = 0;
 // External access
 extern "C" {
     int wantFullscreen = 1;
-    int touchmode = 1;
+    int touchmode = 0;
 
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
@@ -70,8 +70,7 @@ extern "C" {
 	void draw_rect(int x, int y, int w, int h);
 
 	extern int queue_view;
-	void
-		toggle_queue_view();
+	void toggle_queue_view();
 	extern int options_free_view_on;
 
 	GLdouble modelview[16];
@@ -202,8 +201,22 @@ bool showHelp;
 const char* LogFileName = "log.log";
 FILE* LogFile;
 
-void putHere() {
+// == State machine for touch gesture position and kind
+// Classification
+enum State {
+    NoState,
+    Cm, // Camera move
+    Cz, // camera zoom
+    As, // Swipe area
+    Ab, // Ball area
 
+    D,  // 
+    // TODO change identifier names 
+};
+// Where the last touch gesture was started (or with how many fingers)
+State state = NoState;
+
+void putHere() {
     MouseEventEnabled = 0;
     // disable ball move
     if (placing_cue_ball) {
@@ -215,7 +228,11 @@ void putHere() {
         //            placing_cue_ball = 0;
     }
 
+    state = (State)0; // emulate release, don't position ball anymore
 }
+POINT p1_; // old p1
+void moveBall(POINT* p1);
+
 extern "C" {
     extern int helpscreen_on;
     extern double dpiScale;
@@ -223,6 +240,9 @@ extern "C" {
         // Processing
         if (putHereDesired) {
             putHereDesired = false;
+            if (state != 0) {
+                moveBall(&p1_);
+            }
             putHere();
         }
 
@@ -286,18 +306,7 @@ extern "C" {
 		}*/
 	}
 }
-// == State machine for touch gesture position and kind
-// Classification
-enum State {
-	NoState,
-	Cm, // Camera move
-	Cz, // camera zoom
-	As, // Swipe area
-	Ab  // Ball area
-	// TODO change identifier names 
-};
-// Where the last touch gesture was started (or with how many fingers)
-State state = NoState;
+
 
 // Determine whether we are in
 float len(int x, int y);
@@ -310,8 +319,9 @@ bool onBallWithDist(POINT& p) {
 	return len(x - p.x, y - p.y) < ballrad;
 }
 // Ball region
-bool inAb(POINT* p) {
-	return placing_cue_ball; // the whole screen && onBallWithDist(*p);
+bool inAb(POINT* p, bool mustBeOnBall) {
+	return placing_cue_ball // the whole screen 
+        && (onBallWithDist(*p) || !mustBeOnBall);
 }
 
 // Swipe region
@@ -357,7 +367,14 @@ void clamp(T& v, T a, T b) {
 	v = min(max(v, a), b);
 }
 
-POINT p1_; // old p1
+void moveBall(POINT* p1) {
+
+    Vect v = getNewBallPosition(p1->x, p1->y);
+    v.x -= CUEBALLPOS.x;
+    v.y -= CUEBALLPOS.y;
+    ball_displace_clip(&(CUEBALLPOS), v);
+    dprintf("new ball pos unproj %f %f %f\n", v.x, v.y, v.z);
+}
 // Called when the touchpoints moved but still have the same ids (fingers)
 // as they did when the config was last changed
 void move(POINT* p1, POINT* p2) {
@@ -367,26 +384,7 @@ void move(POINT* p1, POINT* p2) {
 		p1d.x = p1->x - p1_.x; p1d.y = p1->y - p1_.y;
 	}
 	if (state == Ab) {
-		dprintf("moving ball to %d %d\n", p1->x, p1->y);
-
-
-		/*
-		Vect v = {p1d.x, p1d.y, 0};
-		float f = 100;
-		v.x /= f; // right
-		v.y /= f; // forward
-		v.z /= f; // up-down
-		// ball_displace_clip(&(CUEBALLPOS), v);
-		v = CUEBALLPOS;
-		dprintf("new ball pos %f %f %f\n", v.x, v.y, v.z);
-		*/
-		Vect v = getNewBallPosition(p1->x, p1->y);
-		v.x -= CUEBALLPOS.x;
-		v.y -= CUEBALLPOS.y;
-		ball_displace_clip(&(CUEBALLPOS), v);
-		// CUEBALLPOS = v;
-		dprintf("new ball pos unproj %f %f %f\n", v.x, v.y, v.z);
-		//  CUEBALLPOS = v;
+        moveBall(p1);
 	}
 	else if (state == Cm) {
 		dprintf("moving camera to %d %d\n", p1->x, p1->y);
@@ -436,7 +434,7 @@ void inputConfigChanges(POINT* p1, POINT* p2) {
 	}
 
 	// Ballmove
-	if (inAb(p1)) {
+	if (inAb(p1, true)) {
 		MouseEventEnabled = 0;
 		state = Ab;
 

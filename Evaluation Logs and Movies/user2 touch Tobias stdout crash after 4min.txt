@@ -1,0 +1,472 @@
+the color <0xrrggbb> means one byte for each red, green, blue
+player_copy1
+player_copy2
+player_copy3
+human player 1
+player_copy3.5
+player_copy4
+player_copy1
+player_copy2
+player_copy3
+human player 2
+player_copy3.5
+player_copy4
+Wed May 20 21:14:59 2015>>>Last Voice Input: after 
+Wed May 20 21:15:00 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:15:00 2015>>>Last Key Input: key: 102, modifiers:  
+Wed May 20 21:15:00 2015>>>Last Touch Input: ballmove possible 
+Wed May 20 21:15:02 2015>>>Command: down (down) 
+Wed May 20 21:15:02 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:15:03 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:04 2015>>>Last Voice Input: as more were 
+Wed May 20 21:15:05 2015>>>Last Touch Input: ballmove possible 
+Wed May 20 21:15:05 2015>>>Last Voice Input: we'll ship and 
+Wed May 20 21:15:06 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:07 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:15:07 2015>>>Last Key Input: key: 102, modifiers:  
+Wed May 20 21:15:07 2015>>>Last Touch Input: confirmed ball placement 
+Wed May 20 21:15:07 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:07 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:08 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:15:08 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:11 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:15:15 2015>>>Command: shoot (shoot) 
+Wed May 20 21:15:17 2015>>>Last Voice Input: she shopped 
+Wed May 20 21:15:24 2015>>>Last Voice Input: but 
+Wed May 20 21:15:26 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:15:28 2015>>>Command: put here (put here) 
+Wed May 20 21:15:29 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:15:29 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:15:30 2015>>>Last Voice Input: but here 
+Wed May 20 21:15:34 2015>>>Command: much stronger (much stronger) 
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:34 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:15:36 2015>>>Last Voice Input: much stronger 
+Wed May 20 21:15:36 2015>>>Command: shoot (shoot) 
+Wed May 20 21:15:38 2015>>>Last Voice Input: food 
+Wed May 20 21:15:41 2015>>>Command: menu (menu) 
+Wed May 20 21:15:41 2015>>>Last Key Input: key: 27, modifiers:  
+Wed May 20 21:15:43 2015>>>Last Voice Input: we'll than 
+Wed May 20 21:15:43 2015>>>Last Voice Input: specifically, yesterday 
+Wed May 20 21:15:45 2015>>>Last Key Input: key: 13, modifiers:  
+Wed May 20 21:15:48 2015>>>Last Voice Input: the month-long into notices of 
+Wed May 20 21:15:49 2015>>>Command: commands (commands) 
+Wed May 20 21:15:51 2015>>>Last Voice Input: comment 
+Wed May 20 21:15:53 2015>>>Command: que (que) 
+Wed May 20 21:15:53 2015>>>Last Key Input: key: 265, modifiers:  
+Wed May 20 21:15:55 2015>>>Last Voice Input: hugh 
+Wed May 20 21:15:58 2015>>>Command: up (up) 
+Wed May 20 21:15:58 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:00 2015>>>Last Voice Input: but 
+Wed May 20 21:16:02 2015>>>Command: birdview (birdview) 
+Wed May 20 21:16:02 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:16:04 2015>>>Last Voice Input: but if you 
+Wed May 20 21:16:04 2015>>>Last Voice Input: a 
+Wed May 20 21:16:07 2015>>>Command: down (down) 
+Wed May 20 21:16:07 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:16:09 2015>>>Last Voice Input: now you 
+Wed May 20 21:16:11 2015>>>Command: up (up) 
+Wed May 20 21:16:11 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:13 2015>>>Command: down (down) 
+Wed May 20 21:16:13 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:16:14 2015>>>Last Touch Input: swipe possible 
+Wed May 20 21:16:15 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:15 2015>>>Last Voice Input: up an eighth a 
+Wed May 20 21:16:16 2015>>>Last Touch Input: swipe possible 
+Wed May 20 21:16:16 2015>>>Last Touch Input: swiped from swipe area 
+Wed May 20 21:16:16 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:20 2015>>>Command: shoot (shoot) 
+Wed May 20 21:16:22 2015>>>Last Voice Input: sharon 
+Wed May 20 21:16:24 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:24 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:32 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:33 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:16:33 2015>>>Last Touch Input: ballmove possible 
+Wed May 20 21:16:34 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:35 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:35 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:36 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:38 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:16:38 2015>>>Last Key Input: key: 102, modifiers:  
+Wed May 20 21:16:38 2015>>>Last Touch Input: confirmed ball placement 
+Wed May 20 21:16:38 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:38 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:39 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:39 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:44 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:44 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:44 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:47 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:47 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:48 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:51 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:16:55 2015>>>Command: stronger (stronger) 
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:16:55 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:16:56 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:16:56 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:16:57 2015>>>Last Voice Input: drummer 
+Wed May 20 21:16:57 2015>>>Command: shoot (shoot) 
+Wed May 20 21:16:59 2015>>>Last Voice Input: the 
+Wed May 20 21:16:59 2015>>>Command: up (up) 
+Wed May 20 21:16:59 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:17:05 2015>>>Command: commands (commands) 
+Wed May 20 21:17:07 2015>>>Last Voice Input: from a 
+Wed May 20 21:17:07 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:17:08 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:17:08 2015>>>Last Voice Input: this fact 
+Wed May 20 21:17:11 2015>>>Last Voice Input: if 
+Wed May 20 21:17:12 2015>>>Last Voice Input: if 
+Wed May 20 21:17:14 2015>>>Last Voice Input: fact 
+Wed May 20 21:17:16 2015>>>Last Voice Input: comment 
+Wed May 20 21:17:19 2015>>>Command: commands (commands) 
+Wed May 20 21:17:21 2015>>>Last Voice Input: comment 
+Wed May 20 21:17:21 2015>>>Command: select (select) 
+Wed May 20 21:17:21 2015>>>Last Key Input: key: 13, modifiers:  
+Wed May 20 21:17:23 2015>>>Last Voice Input: the lack 
+Wed May 20 21:17:24 2015>>>Last Voice Input: but 
+Wed May 20 21:17:25 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:25 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:27 2015>>>Last Voice Input: printout Monday to 
+Wed May 20 21:17:27 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:27 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:28 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:31 2015>>>Command: birdview (birdview) 
+Wed May 20 21:17:31 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:17:32 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:32 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zoom possible 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:32 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Voice Input: but if you 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:33 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:33 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:39 2015>>>Last Voice Input: but yes, it's also the 
+Wed May 20 21:17:40 2015>>>Command: birdview (birdview) 
+Wed May 20 21:17:40 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:17:41 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:41 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:42 2015>>>Last Voice Input: I teach the anybody would be that the 
+Wed May 20 21:17:42 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:43 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zoom possible 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zoom possible 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zoom possible 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Command: up (up) 
+Wed May 20 21:17:43 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:43 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: zooming 
+Wed May 20 21:17:44 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:17:44 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:44 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:17:44 2015>>>Last Key Input: key: 102, modifiers:  
+Wed May 20 21:17:44 2015>>>Last Touch Input: confirmed ball placement 
+Wed May 20 21:17:44 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:44 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:45 2015>>>Last Voice Input: but 
+Wed May 20 21:17:45 2015>>>Command: up (up) 
+Wed May 20 21:17:45 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:17:48 2015>>>Command: up (up) 
+Wed May 20 21:17:48 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:17:49 2015>>>Last Touch Input: swipe possible 
+Wed May 20 21:17:49 2015>>>Last Touch Input: swiped from swipe area 
+Wed May 20 21:17:49 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:17:50 2015>>>Last Voice Input: bad 
+Wed May 20 21:17:51 2015>>>Last Voice Input: interested 
+Wed May 20 21:17:52 2015>>>Last Voice Input: would 
+Wed May 20 21:17:53 2015>>>Last Voice Input: and the 
+Wed May 20 21:17:56 2015>>>Command: birdview (birdview) 
+Wed May 20 21:17:56 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:17:58 2015>>>Last Voice Input: but the bad deal 
+Wed May 20 21:17:58 2015>>>Command: down (down) 
+Wed May 20 21:17:58 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:18:00 2015>>>Last Voice Input: don 
+Wed May 20 21:18:02 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:02 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:02 2015>>>Command: down (down) 
+Wed May 20 21:18:02 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:18:04 2015>>>Last Voice Input: don 
+Wed May 20 21:18:06 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:06 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:06 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:06 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:07 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:07 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:07 2015>>>Command: down (down) 
+Wed May 20 21:18:07 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:18:08 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:08 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:08 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:09 2015>>>Last Voice Input: bad 
+Wed May 20 21:18:09 2015>>>Command: birdview (birdview) 
+Wed May 20 21:18:09 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:18:09 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:11 2015>>>Last Voice Input: and most of our neo 
+Wed May 20 21:18:11 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:11 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:13 2015>>>Last Voice Input: hands-off 
+Wed May 20 21:18:15 2015>>>Last Voice Input: if the 
+Wed May 20 21:18:16 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:17 2015>>>Command: shoot (shoot) 
+Wed May 20 21:18:19 2015>>>Last Voice Input: surely 
+Wed May 20 21:18:20 2015>>>Last Touch Input: ballmove possible 
+Wed May 20 21:18:21 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:18:21 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:18:22 2015>>>Command: put here (put here) 
+Wed May 20 21:18:22 2015>>>Last Key Input: key: 99, modifiers:  
+Wed May 20 21:18:22 2015>>>Last Key Input: key: 102, modifiers:  
+Wed May 20 21:18:23 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:23 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:24 2015>>>Last Voice Input: but here 
+Wed May 20 21:18:25 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:25 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:25 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:27 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:27 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:27 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:28 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:29 2015>>>Command: birdview (birdview) 
+Wed May 20 21:18:29 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:18:31 2015>>>Last Voice Input: they argue 
+Wed May 20 21:18:32 2015>>>Command: up (up) 
+Wed May 20 21:18:32 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:34 2015>>>Last Voice Input: up 
+Wed May 20 21:18:34 2015>>>Last Touch Input: swipe possible 
+Wed May 20 21:18:35 2015>>>Last Mouse Input: button: 1 
+Wed May 20 21:18:36 2015>>>Last Touch Input: camera move possible 
+Wed May 20 21:18:36 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:18:36 2015>>>Last Mouse Input: button: 2 
+Wed May 20 21:18:38 2015>>>Command: much stronger (much stronger) 
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:38 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:40 2015>>>Last Voice Input: sure 
+Wed May 20 21:18:40 2015>>>Command: shoot (shoot) 
+Wed May 20 21:18:46 2015>>>Command: down (down) 
+Wed May 20 21:18:46 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:18:48 2015>>>Last Voice Input: in 
+Wed May 20 21:18:49 2015>>>Command: much stronger (much stronger) 
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:49 2015>>>Last Key Input: key: up, modifiers:  
+Wed May 20 21:18:51 2015>>>Last Voice Input: the 
+Wed May 20 21:18:51 2015>>>Command: menu (menu) 
+Wed May 20 21:18:51 2015>>>Last Key Input: key: 27, modifiers:  
+Wed May 20 21:18:53 2015>>>Last Voice Input: Fuhrman 
+Wed May 20 21:19:06 2015>>>Command: birdview (birdview) 
+Wed May 20 21:19:06 2015>>>Last Key Input: key: 264, modifiers:  
+Wed May 20 21:19:08 2015>>>Last Voice Input: without that view 
+Wed May 20 21:19:08 2015>>>Last Key Input: key: 27, modifiers:  
+Wed May 20 21:19:10 2015>>>Last Key Input: key: 27, modifiers:  
+Wed May 20 21:19:11 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:19:11 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:19:11 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:19:11 2015>>>Last Voice Input: all rights movement said in Thursday's 
+Wed May 20 21:19:11 2015>>>Last Key Input: key: down, modifiers:  
+Wed May 20 21:19:12 2015>>>Last Key Input: key: 13, modifiers:  
+Wed May 20 21:19:13 2015>>>Last Key Input: key: 13, modifiers:  

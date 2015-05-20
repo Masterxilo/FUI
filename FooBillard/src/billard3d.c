@@ -3179,7 +3179,7 @@ void DisplayFunc(void)
     }
     else{
       double znear, zfar;
-      znear = 0.03;
+      znear = 0.1;//0.03;
       zfar = 10.0;
       //       glFrustum( left, right, bottom, top, zNear, zFar );
       glMatrixMode(GL_PROJECTION);
