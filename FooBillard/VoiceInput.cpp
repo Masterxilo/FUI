@@ -105,6 +105,9 @@ void fetchThread(){
 
     commands.push_back("put here");
 
+	commands.push_back("revert"); 
+	commands.push_back("undo");
+	
 	time_t t;
 
 	while (true){
@@ -205,6 +208,13 @@ void fetchThread(){
 				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "commands!";
 				showHelp = !showHelp;
+
+			}
+
+			else if (input == "revert" || input == "undo"){
+				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "revert!";
+				Key('u', 0);
 
 			}
 
