@@ -56,7 +56,7 @@ namespace FooBillardVoiceInput
                                                     "stronger", "much stronger",
                                                     "weaker", "much weaker",
                                                    
-                                                    "que",
+                                                    "cue",
                                                     "birdview",
 
                                                     "menu",
@@ -66,7 +66,8 @@ namespace FooBillardVoiceInput
 
                                                     "commands", "help", "what can I say",
                 
-                "put here"};
+                                                    "put here",
+                                                    "revert","undo"};
 
                 if (useLimitedDictionary)
                 {

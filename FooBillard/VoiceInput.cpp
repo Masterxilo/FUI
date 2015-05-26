@@ -90,7 +90,7 @@ void fetchThread(){
 	commands.push_back("weaker");
 	commands.push_back("much weaker");
 
-	commands.push_back("que");
+	commands.push_back("cue");
 	//commands.push_back("Q.");//cue
 
 	commands.push_back("birdview");
@@ -105,6 +105,9 @@ void fetchThread(){
 
     commands.push_back("put here");
 
+	commands.push_back("revert"); 
+	commands.push_back("undo");
+	
 	time_t t;
 
 	while (true){
@@ -128,9 +131,9 @@ void fetchThread(){
 				shoot(0);
 				//birdview();
 			}
-			else if (input=="que"){
-				printf("%.*s>>>Command: que (%s) \n", timeLen - 1, timeStr, input.c_str());
-				lastAction = "que!";
+			else if (input=="cue"){
+				printf("%.*s>>>Command: cue (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "cue!";
 				Key(KSYM_F3,0);
 
 			}
@@ -205,6 +208,13 @@ void fetchThread(){
 				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
 				lastAction = "commands!";
 				showHelp = !showHelp;
+
+			}
+
+			else if (input == "revert" || input == "undo"){
+				printf("%.*s>>>Command: commands (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "revert!";
+				Key('u', 0);
 
 			}
 
