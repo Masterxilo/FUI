@@ -56,7 +56,7 @@ namespace FooBillardVoiceInput
                                                     "stronger", "much stronger",
                                                     "weaker", "much weaker",
                                                    
-                                                    "que",
+                                                    "cue",
                                                     "birdview",
 
                                                     "menu",

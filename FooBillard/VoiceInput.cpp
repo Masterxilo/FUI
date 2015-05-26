@@ -90,7 +90,7 @@ void fetchThread(){
 	commands.push_back("weaker");
 	commands.push_back("much weaker");
 
-	commands.push_back("que");
+	commands.push_back("cue");
 	//commands.push_back("Q.");//cue
 
 	commands.push_back("birdview");
@@ -131,9 +131,9 @@ void fetchThread(){
 				shoot(0);
 				//birdview();
 			}
-			else if (input=="que"){
-				printf("%.*s>>>Command: que (%s) \n", timeLen - 1, timeStr, input.c_str());
-				lastAction = "que!";
+			else if (input=="cue"){
+				printf("%.*s>>>Command: cue (%s) \n", timeLen - 1, timeStr, input.c_str());
+				lastAction = "cue!";
 				Key(KSYM_F3,0);
 
 			}
