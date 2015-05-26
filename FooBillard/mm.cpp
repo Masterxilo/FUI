@@ -61,12 +61,15 @@ bool allowDebug = 0;
 // External access
 extern "C" {
     int wantFullscreen = 1;
-    int touchmode = 0;
+#ifdef _TOUCHMODE
+    int touchmode = 1;
+#else
 
+    int touchmode = 0;
+#endif
 	extern GLfloat Xrot_offs, Yrot_offs, Zrot_offs;
 
 	void draw_circle(float x, float y, float radius);
-
 	void draw_rect(int x, int y, int w, int h);
 
 	extern int queue_view;
