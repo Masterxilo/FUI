@@ -4189,9 +4189,9 @@ void Key(int key, int modifiers)
                     if( g_lookballnr !=0 ) queue_view=0; else queue_view=1;*/
       break;
     case'u':  /* undo */
-      if (options_gamemode == options_gamemode_training){
+      //if (options_gamemode == options_gamemode_training){
         copy_balls(&bakballs, &balls);
-      }
+      //}
       break;
     }
 
